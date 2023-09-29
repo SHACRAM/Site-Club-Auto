@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+
+:root{
+    --white: #FFFFFF;
+    --yellow: #FAB637;
+    --pink: #FF4848;
+    --orange: #CC6119;
+    --snow: #ECEFF3;
+    --darkGrey: #232628;
+    --blue: #6C98E1;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+body{
+    color: var(--darkGrey);
+}
