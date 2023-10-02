@@ -5,7 +5,7 @@
     --yellow: #FAB637;
     --pink: #FF4848;
     --orange: #CC6119;
-    --snow: #ECEFF3;
+    --snow: #eceff3cf;
     --darkGrey: #232628;
     --blue: #6C98E1;
 }
@@ -15,5 +15,136 @@
 }
 
 body{
+    background-color: var(--darkGrey);
+}
+a{
+    text-decoration: none;
+}
+/*informations haut du header*/
+span{
+    color: var(--orange);
+}
+#adresse{
+    font-weight: 100;
+    padding-top: 15px;
+}
+#adresse span{
+    font-weight: bold;
+}
+
+#topSection{
+    font-family: Montserrat;
+    font-weight: bold;
+    color: var(--white);
+    padding: 0 40px 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#topInfo{
+    padding-left: 20px;
+    font-size: 12px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 32px 210px 32px 125px 230px;
+}
+
+#topInfo span{
+    font-size: 9px;
+}
+#titreSite{
+    color: var(--white);
+    font-weight: bold;
+}
+    
+
+#topSection li p{ 
+    display: inline;  
+}
+
+#logoMain{
+    padding-left: 10px;
+}
+
+.logoSize{
+    height: 30px;
+    width: 30px;
+}
+
+/* Barre de navigation*/
+#mainNav ul{
+    height: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    background-color: var(--snow);
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    justify-content: flex-end;
+    padding-right: 150px;
+       
+}
+
+#mainNav a{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 12px;
     color: var(--darkGrey);
+    
+}
+
+#mainNav li{
+    height: 40px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    
+}
+#mainNav li:hover{
+    background-color: var(--orange);
+}
+#mainNav a:hover{
+    color: var(--white);
+}
+
+#mainNav{
+    height: 400px;
+    width: 100%;
+    background-image: url(../images/vehicule1.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+
+/*Début de la premiere section*/
+
+#titrePresentation{
+    font-family: Monserrat;
+    color: var(--white);
+    padding-left: 100px;
+    display: block;
+    background-color: var(--darkGrey);
+    font-size: 25px;
+}
+
+#mainPresentation{
+    background-color: var(--white);
+    padding: 40px 80px 40px 80px;
+}
+
+#premierArticle{
+    height: 400px;
+    display: grid;
+    grid-template-columns:50% 50%;
+}
+
+#premierArticle img{
+    height: 50%;
+    
 }

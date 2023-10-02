@@ -5,47 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CLUB AUTO - Page d'accueil </title>
     <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/index.css">
 </head>
 <body>
     <!--Début du Header-->
     <header id="mainHeader">
-        <a href="/index.html"><h1>CLUB AUTO</h1></a>
-        <ul>
-            <li><img src="../images/icone-adresse.png" alt="Logo représentant la position d'un lieu sur une carte">
-                <p><span>ADRESSE:</span><br> AVENUE CHARLES DE GAULLE<br>75000 PARIS</p>
-            </li>
-            <li><img src="../images/icon-telephone.png" alt="Logo représentant un téléphone">
-                <p><span>TELEPHONE:</span><br>0123456769</p>
-            </li>
-            <li>
-                <p><span>OUVERTURE:</span> Du lundi au samedi<br><span>HORAIRES:</span> De 9h à 17h</p>
-            </li>
-        </ul>
-        <a href="https://www.facebook.com/" ><img src="../images/iconeFacebook.png" alt="Logo de facebook redirigeant sur la page officielle"></a>
-        <a href="https://twitter.com/"><img src="../images/iconetwitter.png" alt="Logo de twitter redirigeant sur la page officielle"></a>
+        <section id="topSection">
+            <a href="/index.html" id="titreSite"><h1>CLUB AUTO</h1></a>
+            <ul id="topInfo">
+                <li><img src="../images/icone-adresse.png" alt="Logo représentant la position d'un lieu sur une carte" class="logoSize"></li> 
+                <li id="adresse"> <p><span>ADRESSE:</span><br> AVENUE CHARLES DE GAULLE<br>75000 PARIS</p>
+                </li>
+                <li><img src="../images/icon-telephone.png" alt="Logo représentant un téléphone" class="logoSize"></li>
+                <li><p><span>TELEPHONE:</span><br>01 23 45 67 69</p>
+                </li>
+                <li>
+                    <p><span>OUVERTURE:</span> Du lundi au samedi<br><span>HORAIRES:</span> De 9h à 17h</p>
+                </li>
+            </ul>
+            <div id="logoMain">
+                <a href="https://www.facebook.com/" ><img src="../images/iconeFacebook.png" alt="Logo de facebook redirigeant sur la page officielle" class="logoSize"></a>
+                <a href="https://twitter.com/"><img src="../images/iconetwitter.png" alt="Logo de twitter redirigeant sur la page officielle" class="logoSize" ></a>
+            </div>
+        </section>
         <!--Barre de Navigation-->
         <nav id="mainNav">
             <ul>
-                <li><a href="/index.html" >ACCUEIL</a></li>
+                <li><a href="/index.html">ACCUEIL</a></li>
                 <li><a href="/vente.html">VENTE</a></li>
                 <li><a href="/location.html">LOCATION</a></li> 
                 <li><a href="/contact.html">CONTACT</a></li>
             </ul>
-            <div><img src="../images/vehicule1.jpg" alt="Photo montrant différents type de véhicules"></div>
+
         </nav>
    </header>
    <!--Fin du Header-->
 
    <!--Début de la première section-->
-    <section id="mainPrésentation">
-        <h1>CLUB AUTO<span> LE MEILLEUR DE L'AUTOMOBILE</span></h1>
+   <h1 id="titrePresentation">CLUB AUTO<span> LE MEILLEUR DE L'AUTOMOBILE</span></h1>
+    <section id="mainPresentation">
+            
         <article id="premierArticle">
-            <img src="../images/clients.jpg" alt="Deux clients heureux devant une voiture">
-            <h2>BIENVENUE CHEZ<span> CLUB AUTO</span></h2>
-            <p><strong> ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis unde dolore vero sunt. Quidem dolore id doloribus      officiis minima consequatur.</strong>
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aliquid amet, libero repellendus, doloribus fugit autem sit provident quis, voluptatum dicta aperiam consequuntur aspernatur nam itaque quisquam neque corporis distinctio. Rem eos fugit praesentium ab recusandae cumque maxime doloribus, sapiente dolorem sequi odio beatae eum. Ab, dolorum quas! Commodi veniam quisquam laborum non iste distinctio modi expedita error consequatur ut minima, sunt eius ipsum voluptatum molestiae, adipisci, nam incidunt reiciendis!
-            </p>
+            <div>
+                <img src="../images/clients.jpg" alt="Deux clients heureux devant une voiture">
+            </div>
+            <div>
+                <h2>BIENVENUE CHEZ<span> CLUB AUTO</span></h2>
+                <p><strong> ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis unde dolore vero sunt. Quidem dolore id doloribus      officiis minima consequatur.</strong>
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aliquid amet, libero repellendus, doloribus fugit autem sit provident quis, voluptatum dicta aperiam consequuntur aspernatur nam itaque quisquam neque corporis distinctio. Rem eos fugit praesentium ab recusandae cumque maxime doloribus, sapiente dolorem sequi odio beatae eum. Ab, dolorum quas! Commodi veniam quisquam laborum non iste distinctio modi expedita error consequatur ut minima, sunt eius ipsum voluptatum molestiae, adipisci, nam incidunt reiciendis!
+                </p>
+            </div>
         </article>
         <article id="deuxiemeArticle">
             <h2>LE MEILLEUR DE L'AUTOMOBILE</h2>
