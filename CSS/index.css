@@ -142,7 +142,7 @@ span{
 #titrePresentation{
     font-family: Monserrat, Verdana, Geneva, Tahoma, sans-serif;
     color: var(--white);
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: bold;
     padding: 1em 0em 1em 4em;
 
@@ -158,14 +158,11 @@ span{
 
 #premierArticle{
    display: flex;
-   gap: 3em;
-   
-   
+   flex-direction: column;
 }
 
 #imagePremierArticle{
     display: flex;
-    flex: 1;
 }
 
 #imagePremierArticle img{
@@ -175,68 +172,68 @@ span{
 
 
 #articleTitreUn{
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+    font-size: 2rem;
+    font-family: Monserrat, Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 0; 
 }
 
-#textPremierArticle{
+#textPremierArticle p{
     display: flex;
     flex-direction: column;
-    flex: 1;
-    padding-right: 3em;
-    line-height: 1.4em;
-    font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #sousTitreArticleUn{
     margin-top: 1em;
     margin-bottom: 1em;
-
+    font-size: 2rem;
 }
 
-#deuxiemeArticle{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-#deuxiemeArticle img{
-    float: right;
-    width: 470px;   
-}
-
-#deuxiemeArticle div{
-    padding-right: 20px;
-}
-
-#deuxiemeArticle p{
-    padding-top: 40px;
-    border-top-style: solid;
-    border-color: var(--snow);
-    border-width: 2px; 
-    line-height: 1.4em; 
+#contenuParagrapheUn{
+    font-size: 1.5rem;
     font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
-    color: var(--darkGrey); 
+    color: gray;
 }
 
-#deuxiemeArticle ul{
-    padding-left: 20px;
-    line-height: 1.6em;
-    list-style-image: url(../images/check.png);
-    font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-#deuxiemeArticle li{
-    padding-left: 10px;
-}
 #articleTitreDeux{
-    margin-top: 0;
-    padding-bottom: 25px;
+    font-size: 2rem;
     font-family: Monserrat, Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
 }
+
+#deuxiemeArticle{
+    display: flex;
+    flex-direction: column; 
+}
+
+#deuxiemeArticle img{
+}
+
+#deuxiemeArticle div{
+    display: flex;
+    flex-direction: column;
+}
+
+#deuxiemeArticle p{
+    font-size: 1.5rem;
+    color: gray;
+    
+}
+
+#deuxiemeArticle ul{
+    line-height: 1.6em;
+    list-style-image: url(../images/check.png);
+    font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 0;
+    margin-bottom: 6em;
+}
+
+#deuxiemeArticle li{
+    font-size: 1.5rem;
+    line-height: 3rem;
+    
+    
+}
+
 
 /*Début de la section deux*/
 
@@ -553,7 +550,7 @@ span{
 
 /*Début des médias queries*/
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
     #topInfo{
         display: none;
     }
@@ -561,6 +558,7 @@ span{
         display: none;
     }
 
+   
     #titrePresentation{
         font-size: 3em;
         padding-left: 1em;
@@ -587,14 +585,37 @@ span{
    
 }
 
-@media screen and (min-width: 769px){
+@media screen and ( min-width: 1025px){
     #menuBurger{
         display: none;
     }
-
     #telephone{
         display: none;
     }
+
+    #imagePremierArticle{
+        width: 50%;
+        height: 50%;
+    }
+    #premierArticle{
+        display:flex;
+        flex-direction: row;
+        gap: 2.5em;   
+    }
+    
+    #imageDeuxiemeArticle{
+        width: 50%;
+        height: 50%;
+    }
+
+    #deuxiemeArticle{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2em;
+        gap: 2.5em;
+    }
+
+
 
 
 
