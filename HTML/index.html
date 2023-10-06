@@ -10,26 +10,36 @@
 <body>
     <!--Début du Header-->
     <header id="mainHeader">
-        <section id="topSection">
-            <a href="/index.html" id="titreSite"><h1>CLUB AUTO</h1></a>
-            <ul id="topInfo">
-                <div class="detailInfo">
-                    <li><img src="../images/icone-adresse.png" alt="Logo représentant la position d'un lieu sur une carte" class="logoSize"></li> 
-                    <li id="adresse"> <p><span>ADRESSE:</span><br> AVENUE CHARLES DE GAULLE<br>75000 PARIS</p>
-                </div>
-                </li>
-                <li><img src="../images/icon-telephone.png" alt="Logo représentant un téléphone" class="logoSize"></li>
-                <li><p><span>TELEPHONE:</span><br>01 23 45 67 69</p>
-                </li>
-                <li>
-                    <p><span>OUVERTURE:</span> Du lundi au samedi<br><span>HORAIRES:</span> De 9h à 17h</p>
-                </li>
-            </ul>
-            <div id="logoMain">
-                <a href="https://www.facebook.com/" ><img src="../images/iconeFacebook.png" alt="Logo de facebook redirigeant sur la page officielle" class="logoSize"></a>
-                <a href="https://twitter.com/"><img src="../images/iconetwitter.png" alt="Logo de twitter redirigeant sur la page officielle" class="logoSize" ></a>
+        <div id="menuBurger">
+            <button id="boutonMenuBurger">
+                <img src="../images/MenuBurger.png" alt="Menu depliant du site Club Auto" id="imageBurgerMenu">
+            </button>
+        </div>
+        <div id="topInfo">
+            <div id="titreSite">
+                <h1>CLUB AUTO</h1>
             </div>
-        </section>
+            <div class="detailTopInfo">
+                <img src="../images/icone-adresse.png" alt="icone représentant une localisation sur une carte" class="logoSize">
+                <p><span>ADRESSE:</span><br> AVENUE CHARLES DE GAULLE<br>75000 PARIS</p>
+            </div>
+            <div class="detailTopInfo" id="telephone">
+                <img src="../images/icon-telephone.png" alt="icone représentant un téléphone" class="logoSize">
+                <p><span>TELEPHONE:</span><br>01 23 45 67 89</p>
+            </div>
+            <div class="detailTopInfo">
+                <p><span>OUVERTURE:</span> Du lundi au samedi<br><span>HORAIRES:</span> De 9h à 17h</p>
+            </div>
+            <div id="logoMainHeader">
+                <img src="../images/iconeFacebook.png" alt="logo de Facebook" class="logoSize">
+                <img src="../images/iconetwitter.png" alt="Logo de Twitter" class="logoSize">
+            </div>
+        </div>
+        <div class="detailTopInfo" id="telephone">
+            <img src="../images/icon-telephone.png" alt="icone représentant un téléphone" class="logoSize">
+            <p><span>TELEPHONE:</span><br>01 23 45 67 89</p>
+        </div>
+        
         <!--Barre de Navigation-->
         <nav id="mainNav">
             <ul>
@@ -48,8 +58,9 @@
     <section id="mainPresentation">
             
         <article id="premierArticle">
-            
-            <img src="../images/clients.jpg" alt="Deux clients heureux devant une voiture">
+            <div id="imagePremierArticle">
+                <img src="../images/clients.jpg" alt="Deux clients heureux devant une voiture" >
+            </div>
             
             <div id="textPremierArticle">
                 <h2 id="articleTitreUn">BIENVENUE CHEZ<span> CLUB AUTO</span></h2>

@@ -16,66 +16,13 @@
 
 body{
     background-color: var(--darkGrey);
-    display: flex;
-    flex-direction: column;
 }
 a{
     text-decoration: none;
 }
 /*informations haut du header*/
 span{
-    color: var(--orange);
-}
-#adresse{
-    font-weight: 100;
-    padding-top: 0;
-}
-#adresse span{
-    font-weight: bold;
-}
-
-#topSection{
-    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    color: var(--white);
-    padding: 0 40px 0 40px;
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    display: flex;
-    align-items: center;
-   
-}
-
-.detailInfo{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-#topInfo{
-    padding-left: 20px;
-    font-size: 12px;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 32px 210px 32px 125px 230px;
-}
-
-#topInfo span{
-    font-size: 9px;
-}
-#titreSite{
-    color: var(--white);
-    font-weight: bold;
-}
-    
-
-#topSection li p{ 
-    display: inline;  
-}
-
-#logoMain{
-    padding-left: 10px;
+    color: rgb(244, 96, 4);
 }
 
 .logoSize{
@@ -83,84 +30,149 @@ span{
     width: 30px;
 }
 
-/* Barre de navigation*/
-#mainNav ul{
-    height: 40px;
+
+#topInfo{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 2em 20em 2em 20em;
+    gap: 5em;
+     
+}
+#topInfo p, h1{
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 0;
-    background-color: var(--snow);
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(4, 75px);
+}
+
+#topInfo h1{
+    font-family: Monserrat, Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--white);  
+}
+
+#titreSite{
+    display: flex;
+    align-items: center;
+}
+
+.detailTopInfo{
+    font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--white);
+    display: flex;
+    gap: 0.5em;  
+}
+
+#logoMainHeader{
+    display: flex;
+    gap: 0.5em;
+}
+
+/* Barre de navigation*/
+
+#menuBurger{
+    display: flex;
     justify-content: flex-end;
-    padding-right: 150px;
-       
+    padding-top: 2em;
+    padding-right: 2em;
+}
+
+#imageBurgerMenu{
+    height: 50px;
+    width: 50px;}
+
+#boutonMenuBurger{
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+#mainNav ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0;
+    padding-right: 12em;
+    background-color: rgba(255, 255, 255, 0.621);
+    flex-wrap: wrap;
 }
 
 #mainNav a{
-    font-family: Montserrat;
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    font-size: 12px;
-    color: var(--darkGrey);
+    font-size: 1rem;
+    color: black
     
 }
 
 #mainNav li{
-    height: 40px;
+    height: 3em;
     width: fit-content;
+    padding-left: 1em;
+    padding-right: 1em;
     display: flex;
     align-items: center;
     
 }
 #mainNav li:hover{
-    background-color: var(--orange);
+    background-color: rgb(244, 96, 4);
 }
 #mainNav a:hover{
     color: var(--white);
 }
 
 #mainNav{
-    height: 400px;
+    height: 30em;
     width: 100%;
     background-image: url(../images/vehicule1.jpg);
-    background-size:contain;
+    background-size:cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 
 /*Début de la premiere section*/
 
+#mainHeader{
+    display: flex;
+    flex-direction: column;
+}
+
 #titrePresentation{
     font-family: Monserrat, Verdana, Geneva, Tahoma, sans-serif;
     color: var(--white);
-    padding-left: 100px;
-    display: block;
-    background-color: var(--darkGrey);
-    font-size: 25px;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 1em 0em 1em 4em;
+
 }
 
 #mainPresentation{
     background-color: var(--white);
-    padding: 40px 80px 40px 80px;
+    padding: 3em 8em 3em 8em;
     display: flex;
     flex-direction: column;
-    gap: 0;
+    
 }
 
 #premierArticle{
-    height: 400px;
-    display: grid;
-    grid-template-columns:50% 50%;
-    height: 380px;
-    
+   display: flex;
+   gap: 3em;
+   
+   
 }
 
-#premierArticle img{
-    float: left;
-    width: 470px;
-    
+#imagePremierArticle{
+    display: flex;
+    flex: 1;
 }
+
+#imagePremierArticle img{
+    width: 100%;
+    height: 100%;
+}
+
 
 #articleTitreUn{
     margin-top: 0;
@@ -170,15 +182,17 @@ span{
 }
 
 #textPremierArticle{
-    padding-right: 20px;
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-right: 3em;
     line-height: 1.4em;
     font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #sousTitreArticleUn{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1em;
+    margin-bottom: 1em;
 
 }
 
@@ -537,3 +551,51 @@ span{
 }
 
 
+/*Début des médias queries*/
+
+@media screen and (max-width: 768px){
+    #topInfo{
+        display: none;
+    }
+    #mainNav{
+        display: none;
+    }
+
+    #titrePresentation{
+        font-size: 3em;
+        padding-left: 1em;
+    }
+
+    #telephone{
+        display: block;
+        display: flex;
+        font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
+        color: var(--white);
+        font-size: 2em;
+        padding-left: 1em;
+        margin-top: 2em;
+       
+    }
+    .logoSize{
+        width: 80px;
+        height: 80px;
+    }
+
+    #telephone p{
+        margin-top: 0;
+    }
+   
+}
+
+@media screen and (min-width: 769px){
+    #menuBurger{
+        display: none;
+    }
+
+    #telephone{
+        display: none;
+    }
+
+
+
+}
