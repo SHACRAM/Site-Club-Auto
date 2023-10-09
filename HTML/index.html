@@ -5,74 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CLUB AUTO - Page d'accueil </title>
     <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/index.css">
 </head>
 <body>
     <!--Début du Header-->
     <header id="mainHeader">
-        <a href="/index.html"><h1>CLUB AUTO</h1></a>
-        <ul>
-            <li><img src="../images/icone-adresse.png" alt="Logo représentant la position d'un lieu sur une carte">
+        <div id="menuBurger">
+            <button id="boutonMenuBurger">
+                <img src="../images/MenuBurger.png" alt="Menu depliant du site Club Auto" id="imageBurgerMenu">
+            </button>
+        </div>
+        <div id="topInfo">
+            <div id="titreSite">
+                <a href="../HTML/index.html"><h1>CLUB AUTO</h1></a>
+            </div>
+            <div class="detailTopInfo">
+                <img src="../images/icone-adresse.png" alt="icone représentant une localisation sur une carte" class="logoSize">
                 <p><span>ADRESSE:</span><br> AVENUE CHARLES DE GAULLE<br>75000 PARIS</p>
-            </li>
-            <li><img src="../images/icon-telephone.png" alt="Logo représentant un téléphone">
-                <p><span>TELEPHONE:</span><br>0123456769</p>
-            </li>
-            <li>
+            </div>
+            <div class="detailTopInfo">
+                <img src="../images/icon-telephone.png" alt="icone représentant un téléphone" class="logoSize">
+                <p><span>TELEPHONE:</span><br>01 23 45 67 89</p>
+            </div>
+            <div class="detailTopInfo">
                 <p><span>OUVERTURE:</span> Du lundi au samedi<br><span>HORAIRES:</span> De 9h à 17h</p>
-            </li>
-        </ul>
-        <a href="https://www.facebook.com/" ><img src="../images/iconeFacebook.png" alt="Logo de facebook redirigeant sur la page officielle"></a>
-        <a href="https://twitter.com/"><img src="../images/iconetwitter.png" alt="Logo de twitter redirigeant sur la page officielle"></a>
+            </div>
+            <div id="logoMainHeader">
+                <a href="https://www.facebook.com/"><img src="../images/iconeFacebook.png" alt="logo de Facebook" class="logoSize"></a>
+                <a href="https://twitter.com/"><img src="../images/iconetwitter.png" alt="Logo de Twitter" class="logoSize"></a>
+            </div>
+        </div>
+        <div class="detailTopInfo" id="telephone">
+            <img src="../images/icon-telephone.png" alt="icone représentant un téléphone" class="logoSize">
+            <p><span>TELEPHONE:</span><br>01 23 45 67 89</p>
+        </div>
+        
         <!--Barre de Navigation-->
         <nav id="mainNav">
             <ul>
-                <li><a href="/index.html" >ACCUEIL</a></li>
+                <li><a href="/index.html">ACCUEIL</a></li>
                 <li><a href="/vente.html">VENTE</a></li>
                 <li><a href="/location.html">LOCATION</a></li> 
                 <li><a href="/contact.html">CONTACT</a></li>
             </ul>
-            <div><img src="../images/vehicule1.jpg" alt="Photo montrant différents type de véhicules"></div>
+
         </nav>
    </header>
    <!--Fin du Header-->
 
    <!--Début de la première section-->
-    <section id="mainPrésentation">
-        <h1>CLUB AUTO<span> LE MEILLEUR DE L'AUTOMOBILE</span></h1>
+   <h1 id="titrePresentation">CLUB AUTO<span> LE MEILLEUR DE L'AUTOMOBILE</span></h1>
+    <section id="mainPresentation">
         <article id="premierArticle">
-            <img src="../images/clients.jpg" alt="Deux clients heureux devant une voiture">
-            <h2>BIENVENUE CHEZ<span> CLUB AUTO</span></h2>
-            <p><strong> ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis unde dolore vero sunt. Quidem dolore id doloribus      officiis minima consequatur.</strong>
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aliquid amet, libero repellendus, doloribus fugit autem sit provident quis, voluptatum dicta aperiam consequuntur aspernatur nam itaque quisquam neque corporis distinctio. Rem eos fugit praesentium ab recusandae cumque maxime doloribus, sapiente dolorem sequi odio beatae eum. Ab, dolorum quas! Commodi veniam quisquam laborum non iste distinctio modi expedita error consequatur ut minima, sunt eius ipsum voluptatum molestiae, adipisci, nam incidunt reiciendis!
-            </p>
+                <img src="../images/clients.jpg" alt="Deux clients heureux devant une voiture" id="imagePremierArticle">
+            <div id="textPremierArticle">
+                <h2 id="articleTitreUn">BIENVENUE CHEZ<span> CLUB AUTO</span></h2>
+                <p id="sousTitreArticleUn"><strong> ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis unde dolore vero sunt. Quidem dolore id dol</strong>
+                </p>
+                <p id="contenuParagrapheUn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aliquid amet, libero repellendus, doloribus fugit autem sit provident quis, voluptatum dicta aperiam consequuntur aspernatur nam itaque quisquam neque corporis distinctio. Rem eos fugit praesentium ab recusandae cumque maxime doloribus, sapiente dolorem sequi odio beatae eum. Ab, dolorum quas! Commodi veniam quisquam laborum.
+                </p>
+            </div>
         </article>
         <article id="deuxiemeArticle">
-            <h2>LE MEILLEUR DE L'AUTOMOBILE</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis atque maxime, consequatur labore illum reprehenderit quas consequuntur dolor, eveniet placeat enim qui aut? Itaque aspernatur error quibusdam aliquam? Fugiat inventore quos laborum nulla, aliquid asperiores ad soluta? Quibusdam ipsum architecto, dolorum accusamus dicta autem vero distinctio laborum atque nam asperiores voluptatibus enim molestias vel, cupiditate corporis eveniet cumque amet, totam dignissimos dolorem? Facere labore rerum alias dolor qui impedit corporis!</p>
+            <div>
+                <h2 id="articleTitreDeux">LE MEILLEUR DE L'AUTOMOBILE</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis atque maxime, consequatur labore illum reprehenderit quas consequuntur dolor, eveniet placeat enim qui aut? Itaque aspernatur error quibusdam aliquam? Fugiat inventore quos Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur amet consequatur.</p>
 
-            <ul>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet</li>
-            </ul>
-            <img src="../images/entretien.jpg" alt="image montrant un technicien en train de nettoyer une voiture">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                </ul>
+            </div>
+            <img src="../images/entretien.jpg" alt="image montrant un technicien en train de nettoyer une voiture" id="imageDeuxiemeArticle">
+        </article>
     </section>
     <!--Fin de la première section-->
 
 
     <!--Début de la deuxième section-->
     <section id="mainChoix">
-        <article>
+        <article id="choixLocation" class="choixSectionDeux">
             <h3>Vous souhaitez louer?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vitae sapiente, veritatis nesciunt ipsa iusto rerum molestiae nobis eligendi dolores, doloremque autem, animi quia quo? Dolorem laborum assumenda magnam ullam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vitae sapiente, veritatis nesciunt ipsa iusto rerum molestiae nobis eligendi dolores, doloremque autem, animi quia quo? Dolorem laborum assumenda magnam Lorem ipsum, dolor sit amet </p>
         </article>
 
-        <article>
+        <article id="choixAchat" class="choixSectionDeux">
             <h3>Vous souhaitez acheter?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vitae sapiente, veritatis nesciunt ipsa iusto rerum molestiae nobis eligendi dolores, doloremque autem, animi quia quo? Dolorem laborum assumenda magnam ullam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit. adipisicing elit. Accusantium vitae sapiente, veritatis nesciunt ipsa iusto rerum molestiae nobis eligendi dolores, doloremque autem, animi quia quo? Dolorem laborum assumenda magnam ullam. 
+            </p>
         </article>
     </section>
     <!--Fin de la deuxième section-->
@@ -80,30 +103,45 @@
 
     <!--Début de la troisième section-->
     <section id="mainVehiculesRecents">
-        <h2>VEHICULES RECENTS</h2>
-    <div>   
-        <div>
-            <img src="../images/vehicule2.jpg" alt="image montrant une BMW 535l">
-            <div>
-                <p>BMW 535l, NAVI,<br> LEATHER, ABS</p>
-                <p>5 500€</p>
-            </div>
+        <div id="titreSectionTrois">
+            <h2 id="detailTitre">VEHICULES RECENTS</h2>
         </div>
-        <div>
-            <img src="../images/vehicule2.jpg" alt="image montrant une BMW 328l">
-            <div>
-                <p>BMW 328l, SPORT,<br> LINE BODY KIT</p>
-                <p>8 000€</p>
+        <div id="listeVehiculesRecents">   
+            <div class="detailVehicule" id="vehiculeUn">
+                <div>
+                    <img src="../images/vehicule2.jpg" alt="image montrant une BMW 535l" class="imageVehiculeRecent">
+                </div>
+                <div class="infoVehicule">
+                    <div class="bordureBasse">
+                        <p class="prix">5500€</p>
+                        <p>BMW 535l, NAVI, LEATHER, ABS</p>
+                        
+                    </div>
+                </div>
             </div>
-        </div>
-        <div>
-            <img src="../images/vehicule2.jpg" alt="image montrant une Ford Explorer de 2015">
-            <div>
-                <p>FORD EXPLORER 2015<br> 4WD</p>
-                <p>9 000€<br>8 200€</p>
+            <div class="detailVehicule" id="vehiculeDeux">
+                <div>
+                    <img src="../images/vehicule2.jpg" alt="image montrant une BMW 328l" class="imageVehiculeRecent">
+                </div>
+                <div class="infoVehicule">
+                    <div class="bordureBasse">
+                        <p class="prix">8000€</p>
+                        <p>BMW 328l, SPORT,LINE BODY KIT</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div> 
+            <div class="detailVehicule" id="vehiculeTrois">
+                <div>
+                    <img src="../images/vehicule2.jpg" alt="image montrant une Ford Explorer de 2015" class="imageVehiculeRecent">
+                </div>
+                <div class="infoVehicule">
+                    <div class="bordureBasse">
+                        <p class="prixTrois"><span id="ancienPrix">9000€</span>8200€</p>
+                        <p>FORD EXPLORER 2015 4WD</p>                       
+                    </div>
+                </div>
+            </div>
+        </div> 
     </section>
     <!--Fin de la troisième section-->
 
@@ -111,71 +149,101 @@
     <!--Début de la quatrième section-->
     <section id="mainPrestations">
         <h2>Pourquoi nous choisir?</h2>
-        <p>
-            <img src="../images/icon1.png" alt="Logo d'une étiquette">
-            <h3>Financement</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati delectus omnis nesciunt neque laudantium assumenda id cum laboriosam! Molestias, doloribus.</p>
-        </p>
-        <p>
-            <img src="../images/icon2.png" alt="Logo d'une jauge de vitesse">
-            <h3>Réactivité de l'équipe technique</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit omnis at deleniti. Nobis, voluptas odio. Sit consectetur non facilis architecto ratione? Nulla accusantium perspiciatis doloremque?</p>
-        </p>
-        <p>
-            <img src="../images/icon3.png" alt="Logo d'une bulle de conversation">
-            <h3>A l'écoute de notre clientèle</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nihil cumque vero natus autem voluptatem, laudantium quae delectus saepe neque.</p>
-        </p>
-        <p>
-            <img src="../images/icon4.png" alt="Logo d'un carnet de notes">
-            <h3>Service &amp; maintenance</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nihil cumque vero natus autem voluptatem, laudantium quae delectus saepe neque.</p>
-        </p>
-        <button><a href="#">Contactez-nous</a></button>
+        <div id="detailQualiteService">
+            <section class="description">
+                    <img src="../images/icon1.png" alt="Logo d'une étiquette" class="logoQualiteService">
+                <div class="descriptionQualiteService">
+                     <h3>Financement</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati delectus omnis nesciunt neque laudantium assumenda id cum laboriosam! Molestias, doloribus.</p>
+                </div>
+            </section>
+            <section class="description">
+                    <img src="../images/icon2.png" alt="Logo d'une jauge de vitesse" class="logoQualiteService">
+                <div class="descriptionQualiteService">
+                     <h3>Réactivité de l'équipe technique</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit omnis at deleniti. Nobis, voluptas odio. Sit consectetur non facilis architecto ratione? </p>
+                </div>
+            </section>
+            <section class="description">
+                    <img src="../images/icon3.png" alt="Logo d'une bulle de conversation" class="logoQualiteService">
+                <div class="descriptionQualiteService">
+                     <h3>A l'écoute de notre clientèle</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nihil cumque vero natus autem voluptatem, laudantium quae delectus saepe neque.</p>
+                </div>
+            </section>
+            <section class="description">
+                    <img src="../images/icon4.png" alt="Logo d'un carnet de notes" class="logoQualiteService">
+                <div class="descriptionQualiteService">
+                     <h3>Service &amp; maintenance</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nihil cumque vero natus autem voluptatem, laudantium quae delectus saepe neque.</p>
+                </div>
+            </section>
+        </div>
+        <div class="boutonContact">
+            <a href="../HTML/contact.html" >CONTACTEZ NOUS</a>
+        </div>
     </section>
     <!--Fin de la quatrième section-->
 
 
     <!--Début de la cinquième section-->
     <section id="mainDernierePresentation">
-        <article>
-            <h3><span>CLUB AUTO</span><br> VENTE ET LOCATION</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolores hic deserunt fugiat dolorum ab a eligendi doloremque quasi ipsam quaerat sunt nam ipsum quos tempore ex provident, soluta sed.</p>
+        <article id="articleDernierePresentation">
+            <div>
+                <h3>CLUB AUTO<br><span> VENTE ET LOCATION</span></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolores hic deserunt fugiat dolorum ab a eligendi doloremque quasi ipsam quaerat sunt nam ipsum quos tempore ex provident, soluta sed.</p>
+            </div>
         </article>
     </section>
     <!--Fin de la cinquième section-->
 
     <!--Début de Footer-->
     <footer id="mainFooter">
-        <div>
-            <p>
-                <h4><span>CLUB</span> AUTO</h4>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, exercitationem facere! Consequuntur consequatur, ipsam fugiat repellat minima corporis libero dignissimos.
-            </p>
-            <p>
-                <h4>HORAIRE D'OUVERTURE</h4>
-                lundi-samedi: 09:00 - 17:00<br>
-                Dimanche et jours fériés: Fermé
-            </p>
-            <form>
-                <label for="emailNews" >NEWSLETTER</label>
-                <input type="email" name="emailNews" id="emailNews">
-                <button><img src="../images/iconereseau.png" alt="Une icone représentant une réception de réseau"></button><br>
-                <p>Inscrivez-vous pour recevoir les<br>
-                dernières offres</p>
-            </form>
+        <section id="contenuFooter">
             <div>
+                
+                    <h4><span>CLUB</span> AUTO</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, exercitationem facere! 
+                </p>
+            </div>
+            <div>
+                
+                    <h4>HORAIRE D'OUVERTURE</h4>
+                <p>    
+                    lundi-samedi: <span>09:00 - 17:00</span><br>
+                    Dimanche et jours fériés: <span>Fermé</span>
+                </p>
+            </div>
+            <div>
+                <form>
+                    <div>
+                        <label for="emailNews" >NEWSLETTER</label>
+                    </div>
+                    <div id="inputFooter">
+                        <input type="email" name="emailNews" id="emailNews" placeholder="Entrez votre email">
+                        <button class="logoForm"><img src="../images/iconereseau.png" alt="Une icone représentant une réception de réseau" class="logoSize"></button>
+                    </div>
+                    <p>Inscrivez-vous pour recevoir les
+                    dernières offres</p>
+                </form>
+            </div>
+            <div id="reseauxSociaux">
                 <h4>RESEAUX SOCIAUX</h4>
-                <div>
-                    <a href="https://www.facebook.com/"><img src="../images/iconeFacebook.png" alt="logo reseau social facebook"></a>
-                    <a href="https://twitter.com/"><img src="../images/iconetwitter.png" alt="logo reseau social twitter"></a>
-                    <a href="https://www.instagram.com/"><img src="../images/iconeInstagram.png" alt="logo reseau social instagram"></a>
-                    <a href="https://fr.wikipedia.org/wiki/Google%2B"><img src="../images/iconeGoogle+.png" alt="logo reseau social google+"></a>
-                    <a href="https://www.youtube.com/"><img src="../images/iconeYoutube.png" alt="logo reseau social youtube"></a>
+                <div id="logoReseauxFooter" >
+                    <a href="https://www.facebook.com/"><img src="../images/iconeFacebook.png" alt="logo reseau social facebook" class="logoSize"></a>
+                    <a href="https://twitter.com/"><img src="../images/iconetwitter.png" alt="logo reseau social twitter" class="logoSize"></a>
+                    <a href="https://www.instagram.com/"><img src="../images/iconeInstagram.png" alt="logo reseau social instagram" class="logoSize"></a>
+                    <a href="https://fr.wikipedia.org/wiki/Google%2B"><img src="../images/iconeGoogle+.png" alt="logo reseau social google+" class="logoSize"></a>
+                    <a href="https://www.youtube.com/"><img src="../images/iconeYoutube.png" alt="logo reseau social youtube" class="logoSize"></a>
                 </div>
             </div>
+        </section>
+        <div id="copyRight">
+            <p>
+                Copyright &copy; Club Auto - Tous droits réservés
+            </p>
         </div>
-        <p>Copyright &copy; Club Auto - Tous droits réservés</p>
     </footer>
     <!--Fin du footer-->
 </body>
