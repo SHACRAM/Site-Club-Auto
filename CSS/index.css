@@ -26,16 +26,20 @@ span{
 }
 
 .logoSize{
-    height: 30px;
-    width: 30px;
+    height: 3em;
+    width: 3em;
+}
+
+.logoSize:hover{
+    background-color: white;
 }
 
 
 #topInfo{
     display: flex;
     justify-content: center;
-    justify-content: space-between;
-    padding: 2em 20em 2em 20em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     gap: 5em;
      
 }
@@ -150,7 +154,7 @@ span{
 
 #mainPresentation{
     background-color: var(--white);
-    padding: 3em 8em 3em 8em;
+    padding: 3em 4em 3em 4em;
     display: flex;
     flex-direction: column;
     
@@ -284,9 +288,7 @@ span{
 }
 
 .choixSectionDeux{
-    padding: 6em 6em 6em 10em;
-
-   
+    padding: 6em 6em 6em 3em;
 }
 
 
@@ -302,15 +304,19 @@ span{
     padding: 6em 3em 0em 3em;
 }
 
+
+
 #mainVehiculesRecents h2{
     color: var(--white);
     font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 6rem;
+    font-size: 3rem;
     text-align: center;
     font-weight: bold;
     border-bottom: 4px solid var(--orange);
     margin: 0;
     padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 
 }
 
@@ -342,7 +348,7 @@ span{
 .bordureBasse{
     display: flex;
     flex-direction: column;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
     border-bottom: 2px solid grey;
 
@@ -352,7 +358,7 @@ span{
     background-color: var(--blue);
     width: fit-content;
     padding: 0.5em;
-    margin-left: 2em;
+    margin-left: 1.5em;
     margin-bottom: 0;
 }
 
@@ -379,65 +385,71 @@ span{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 2em;
 }
 
 #mainPrestations h2{
     font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
-    justify-content: center;
-    margin-top: 35px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    
     
 }
 
 #detailQualiteService{
-    display: grid;
-    grid-template-columns: repeat(4, 150px);
-    gap: 60px;
     display: flex;
-    justify-content: center;
-    padding: 60px 80px 20px 80px; 
+    flex-direction: column;
+    gap: 5em;
+    padding-left: 2em;
+    padding-right: 5em;
+    margin-top: 4em;
 }
 
 .description{
-    display: grid;
-    grid-template-columns: 30px 150px;
-    gap: 25px;
+    display: flex;
+    gap: 2em;
+    margin-bottom: 4em;
     
 }
 .descriptionQualiteService h3{
     font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
     margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 14px;
-    
 }
 
 .descriptionQualiteService p{
     font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
     color: gray;
-    font-size: 12px;
+    font-size: 1.5rem;
 }
 
 .logoQualiteService{
-    height: 40px;
-    width: 45px;
+    width: 7em;
+    height: 7em;
 }
 
 .boutonContact{
-    width: 180px;
-    height: 40px;
+    width: 16em;
+    height: 3em;
     border: none;
-    border-radius: 2px 2px 2px 2px;
+    border-radius: 4px 4px 4px 4px;
     background-color: var(--blue);
-    margin-bottom: 50px;
-    margin-top: 30px;
+    margin-bottom: 5em;
+    border-bottom: 4px solid #7ca7eb;
 }
 
 .boutonContact a{
+    display: flex;
+    justify-content: center;
     color: var(--white);
     font-family: Montserrat ,Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 1rem;
+    padding-top: 1em;
+    
 }
 
 /*Début de la section cinq*/
@@ -447,138 +459,140 @@ span{
 #mainDernierePresentation{
     background-image: url(../images/vehicule3.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
+    background-position: center;
     width: 100%;
     height: 100%;
-    padding-bottom: 130px;
+    padding-top: 8em;
+    padding-bottom: 8em;
+   
+    
 }
 
 #articleDernierePresentation{
     background-color: rgba(255, 166, 0, 0.875);
     display: flex;
     flex-direction: column;
-    width:500px;
-    height: 220px;
-    padding: 60px 60px 60px 60px;
-    margin: 100px 0px 20px 200px;
-    line-height: 1.5;
+    line-height: 1.5em;
+    padding: 6em 4em 4em 4em;
+
     
 }
 
-#articleDernierePresentation div{
-    width: 500px;
-
-}
 
 #articleDernierePresentation h3{
     font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    font-size: 45px;
+    font-size: 3rem;
+    line-height: 1.3em;
     margin-top: 0;
-    margin-bottom: 20px;
-    line-height: 1em;
+
 }
-
-
 #articleDernierePresentation h3 span{
     color: var(--white);
 }
 
 #articleDernierePresentation p{
     font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
+    font-size: 1.5rem;
+    line-height: 1.5em;
 }
 
 
 /*Début du footer*/
 
 #mainFooter{
-    display: grid;
-    grid-template-rows: 2fr 1fr;
-    justify-content: center;
+   display: flex;
+   flex-direction: column;
+   padding: 3em 2em 2em 2em;
 }
 
 #mainFooter p{
     color: rgb(154, 152, 152);
     font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
-    
+    line-height: 1.5em;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1.5em;
 }
 
-#contenuFooter{
-    display: grid;
-    grid-template-columns: 300px 200px 180px 300px; 
-    gap: 70px;
-    justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid grey;
-    width: fit-content;
-
-
+#mainFooter h4,label{
+    font-size:1.8rem;
+    font-weight: bold;
+    margin-top: 0;
 }
 
 #contenuFooter h4, label{
     color: var(--white);
     font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 0;
 }
+
 
 #contenuFooter span{
     color: var(--blue);
 }
 
+#contenuFooter p span{
+    color: var(--white);
+}
+
 #reseauxSociaux{
     display: flex;
     flex-direction: column;
-
-}
-
-#reseauxSociaux h4{
-    margin-bottom: 10px;
+    
 }
 
 #logoReseauxFooter{
-    display: grid;
-    grid-template-columns: repeat(5, 30px);
-    gap: 20px;
+    display: flex;
+    gap: 0.5em;
+    border-bottom: 2px solid grey;
+    padding-bottom: 2em;
 
 
 }
 .logoForm{
-    height: 30px;
-    width: 30px;
+    height: 4em;
+    width: 4em;
     border: none;
     padding: 0;
 }
 
+.logoForm img{
+    height: 4em;
+    width: 4em;
+}
+
 #emailNews{
     font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
-    
-
 }
 
 #contenuFooter input{
-    height: 30px;
+    height: 4em;
+    width: 25em;
     border: none;
     padding: 0;
 }
 
 #inputFooter{
     display: flex;
-    margin-top: 10px; 
+    margin-top: 1.5em; 
 }
 
 #copyRight{
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 1.5em;
+}
+
+#copyRight p{
+    font-size: 1.2rem;
 }
 
 
 /*Début des médias queries*/
 
-@media screen and (max-width: 1024px){
+@media only screen and (max-width: 767px){
+    /*Médias queries pour la version mobile*/
     #topInfo{
         display: none;
     }
@@ -621,7 +635,8 @@ span{
    
 }
 
-@media screen and ( min-width: 1025px){
+@media only screen and ( min-width: 768px){
+    
     #menuBurger{
         display: none;
     }
@@ -675,8 +690,10 @@ span{
 
     /*Début des médias queries de la section trois*/
 
+
     #mainVehiculesRecents{
         padding: 4em;
+        flex-wrap: wrap;
     }
 
     #listeVehiculesRecents{
@@ -703,8 +720,145 @@ span{
         height: fit-content; 
 
     }
+    /*Début des médias queries de la section quatre*/
+    #detailQualiteService{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin-left: 8em;
+        margin-right: 8em;
+        gap: 3em;
+    }
+
+    .descriptionQualiteService h3{
+        font-size: 1.4rem;
+    }
+
+    .descriptionQualiteService p{
+        font-size: 1rem;
+    }
+
+    .logoQualiteService{
+        width: 5em;
+        height: 5em;
+    }
+    /*Début des médias queries pour la section cinq*/
+
+    #mainDernierePresentation{
+        background-size: 100%;
+        background-position: top; 
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+
+    #articleDernierePresentation{
+        width: 550px;
+        height: 200px;
+        padding: 0;
+        margin-left: 6em;
+        padding: 3em;
+    }
+
+    #articleDernierePresentation h3{
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    #articleDernierePresentation p{
+        font-size: 1rem;
+    
+    }
+    /*Début des médias queries du footer*/
+
+    #mainFooter{
+        padding:3em 6em 2em 6em;
+    }
+
+    #contenuFooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 4em;
+        border-bottom: 2px solid grey;
+        flex-wrap: wrap;
+        
+    }
+    #mainFooter h4,label{
+        font-size:1.2rem;
+        font-weight: bold;
+        margin-top: 0;
+    }
+
+    #contenuFooter p{
+        font-size: 0.9rem;
+    }
+
+    #logoReseauxFooter{
+        border: none;
+    }
+
+    #contenuFooter input{
+        height: 2.5em;
+        width: 18em;
+    }
+
+    .logoForm{
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    .logoForm img{
+        display: flex;
+        gap: 2em;
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    #copyRight p{
+        font-size: 0.9rem;
+        margin-bottom: 0;
+    }
+
+    
+@media only screen and (max-width: 1200px){
+
+    /*Responsive des informations du header*/
+    #topInfo{
+        width: 100%;
+        gap: 2em;
+    }
+    
+    /*responsive de la barre de navigation*/
+    #mainNav ul{
+        padding:0;
+        justify-content: center;
+    }
     
 
+    /*Résponsive section trois*/
+    #listeVehiculesRecents{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .bordureBasse{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prix, .prixTrois{
+        margin-left: 0;
+    }
+
+    /*Responsive section quatre*/
+
+    #detailQualiteService{
+        flex-wrap: wrap;
+    }
+
+}
+}
 
 
 
