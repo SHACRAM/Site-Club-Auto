@@ -19,6 +19,7 @@ body{
 }
 a{
     text-decoration: none;
+    
 }
 /*informations haut du header*/
 span{
@@ -74,22 +75,28 @@ span{
 
 #menuBurger{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding-top: 2em;
     padding-right: 2em;
+    align-items: center;
+    
+
 }
 
 #imageBurgerMenu{
     height: 50px;
-    width: 50px;}
+    width: 50px;
+
+
+}
 
 #boutonMenuBurger{
     width: 50px;
     height: 50px;
     border-style: none;
     padding: 0;
-    display: flex;
-    justify-content: flex-end;
+    
+    
     
 }
 
@@ -129,12 +136,230 @@ span{
 #mainNav{
     height: 30em;
     width: 100%;
-    background-image: url(../images/vehicule1.jpg);
+    background-image: url(../images/vente-location.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+#entete{
+    position: relative;
+}
+
+#vente{
+    position: absolute;
+    top: 0;
+}
+
+#imageEntete{
+    width: 100%;
+    filter:brightness(70%);
+}
+#vente{
+    font-size: 4rem;
+    color: var(--white);
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding-left: 0.5em;
+    padding-top: 1em;
+}
 /*Fin du header*/
+
+/*Début de la section main*/
+
+#mainContent{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    position: relative;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+/*Début de la mise en page de la balise aside*/
+
+#filtres{
+    display:flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+    
+    
+    
+    
+}
+
+#rechercher{
+    background-color: var(--darkGrey);
+    color: var(--white);
+    font-family: Open sans, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    padding: 1em;
+}
+#rechercher img{
+    width: 60px;
+    height: 50px;
+}
+
+#detailFiltre{
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+}
+
+.filtreBaliseSelect{
+    background-color: rgba(128, 128, 128, 0.224);
+    height: 3em;
+    border: none;
+    font-size: 1.5rem;
+    font-family: Open sans, Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 1em;
+}
+
+#choixPrix{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+    gap: 1em;
+}
+
+#rangePrix{
+    color: black;
+    font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+#affichagePrix{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    gap: 1.5em;
+}
+
+.valeurPrix{
+    background-color: rgba(128, 128, 128, 0.224);
+    font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin:0;
+}
+
+#boutonAside{
+    background-color: var(--blue);
+    font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    color: var(--white);
+    border: none;
+    font-weight: bold;
+    width: 100%;
+    padding:0 ;
+    height: 2.3em;
+    border-radius: 5px 5px 5px 5px;
+    border-bottom: 4px solid #506c9a;
+    margin-top: 3em;
+}
+
+/*Début de la première section*/
+
+#ordrePreferences select{
+    background-color:rgba(128, 128, 128, 0.224);
+    margin: 2em 0 2em 0;
+    height: 2.5em;
+    font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    padding-left: 1em;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-bottom: 0;
+}
+
+.flecheDeroulante{
+    width: 30px;
+    height: 20px;
+    background-color: rgba(128, 128, 128, 0.224);
+    margin-top: 3em;
+    padding: 1.5em 1em 1em 0;
+}
+
+#filtreDeroulant{
+    display: flex;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.224);
+    padding-bottom: 3em;
+}
+
+.imagePrixVehicule{
+    position: relative;
+}
+
+.imagePrixVehicule img{
+    width: 100%;
+    padding-top: 4em;
+}
+
+.prixVehiculeVente{
+    background-color: var(--blue);
+    width: fit-content;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5em 0.5em 0.5em 1.5em;
+    color: var(--white);
+    font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: 6px;
+}
+
+
+
+.descriptionVehiculeVente h3{
+    font-family: Montserrat,Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: 0;
+    padding-top: 1.5em;
+}
+
+.texteVehiculeVente{
+    font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    color: grey;
+}
+
+.descriptionVehiculeVente a{
+    color: black;
+    font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+   
+}
+
+.descriptionVehiculeVente{
+    border-bottom:2px solid rgba(128, 128, 128, 0.224);
+    padding-bottom: 5em;
+}
+
+#dernierDescriptionVehiculeVente{
+    margin-bottom: 8em;
+}
+
+
+
+
+
+
+    
 
 
 
@@ -166,6 +391,23 @@ span{
  #contenuFooter h4, label{
      color: var(--white);
      font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ #horaireFooter{
+    margin-bottom: 1em;
+ }
+
+ #paragrapheFooterUn{
+    padding-bottom: 2em;
+ }
+
+ #paragrapheFooterDeux{
+   padding-bottom: 1em;
+   margin-top: 0;
+ }
+
+ #titreReseauxFooter{
+    padding-top: 1.5em;
  }
  
  
@@ -212,11 +454,13 @@ span{
      width: 25em;
      border: none;
      padding: 0;
+     padding-left: 1em;
  }
  
  #inputFooter{
      display: flex;
-     margin-top: 1.5em; 
+     margin-top: 1.5em;
+     
  }
  
  #copyRight{
@@ -230,6 +474,8 @@ span{
  }
 
 
+
+
  /*Début des médias queries*/
 
 @media only screen and (max-width: 767px){
@@ -240,35 +486,49 @@ span{
     #mainNav{
         display: none;
     }
-
-   
     #titrePresentation{
         font-size: 3em;
         padding-left: 1em;
     }
+    .headerMobile{
+        color: var(--white);
+        font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 3rem;
+        padding-left: 0.5em;
+        margin-top: 0;
+    }
+   
 
     #telephone{
         display: block;
         display: flex;
         font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
         color: var(--white);
-        font-size: 2em;
+        font-size: 1.5rem;
         padding-left: 1em;
         margin-top: 2em;
        
     }
     .logoSize{
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
+    
 
     #telephone p{
         margin-top: 0;
     }
 
+    #ordre{
+        display: none;
+    }
+
 }
 
 @media only screen and ( min-width: 768px){
+    #entete{
+        display: none;
+    }
     
     #menuBurger{
         display: none;
@@ -276,135 +536,12 @@ span{
     #telephone{
         display: none;
     }
-    /*Début des médias queries de la section une*/
-    #imagePremierArticle{
-        width: 50%;
-        height: 50%;
-    }
-    #premierArticle{
-        display:flex;
-        flex-direction: row;
-        gap: 2.5em;   
-    }
     
-    #imageDeuxiemeArticle{
-        width: 50%;
-        height: 50%;
-    }
-
-    #deuxiemeArticle{
-        display: flex;
-        flex-direction: row;
-        margin-top: 2em;
-        gap: 2.5em;
-    }
-    /*Début des médias queries de la section deux*/
-    #mainChoix{
-        display: flex;
-        flex-direction: row;
-        padding: 8em;
-        
-    }
-
-    .choixSectionDeux h3{
-        font-size: 2rem;
-        width: 100%;
-    }
-
-    .choixSectionDeux p{
-        font-size: 1.5rem;
-        width: 100%;
-    }
-
-    .choixSectionDeux{
-        padding: 3em;
-        width: 100%;
-    }
-
-    /*Début des médias queries de la section trois*/
-
-
-    #mainVehiculesRecents{
-        padding: 4em;
-        flex-wrap: wrap;
-    }
-
-    #listeVehiculesRecents{
-        display: flex;
-        gap: 1.5em;
-    }
-
-    .bordureBasse{
-        display: flex;
-        flex-direction:row-reverse;
-        font-size: 1.5rem;
-    }
     
-
-    .prix{
-        margin-bottom: 1em; 
-        height: fit-content;  
-    }
-
-    .prixTrois{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1em; 
-        height: fit-content; 
-
-    }
-    /*Début des médias queries de la section quatre*/
-    #detailQualiteService{
-        display: flex;
-        flex-direction: row;
-        padding: 0;
-        margin-left: 8em;
-        margin-right: 8em;
-        gap: 3em;
-    }
-
-    .descriptionQualiteService h3{
-        font-size: 1.4rem;
-    }
-
-    .descriptionQualiteService p{
-        font-size: 1rem;
-    }
-
-    .logoQualiteService{
-        width: 5em;
-        height: 5em;
-    }
-    /*Début des médias queries pour la section cinq*/
-
-    #mainDernierePresentation{
-        background-size: 100%;
-        background-position: top; 
-        padding-top: 5em;
-        padding-bottom: 5em;
-    }
-
-    #articleDernierePresentation{
-        width: 550px;
-        height: 200px;
-        padding: 0;
-        margin-left: 6em;
-        padding: 3em;
-    }
-
-    #articleDernierePresentation h3{
-        font-size: 2rem;
-        margin-bottom: 0;
-    }
-
-    #articleDernierePresentation p{
-        font-size: 1rem;
-    
-    }
     /*Début des médias queries du footer*/
 
     #mainFooter{
-        padding:3em 6em 2em 6em;
+        padding:3em 5em 2em 5em;
     }
 
     #contenuFooter{
@@ -432,7 +569,7 @@ span{
 
     #contenuFooter input{
         height: 2.5em;
-        width: 18em;
+        width: 15em;
     }
 
     .logoForm{
@@ -453,6 +590,13 @@ span{
     }
     /*Fin du footer*/
 
+
+@media only screen and (min-width: 1024px) {
+    
+
+    
+}
+
     
 @media only screen and (max-width: 1200px){
 
@@ -468,28 +612,5 @@ span{
         justify-content: center;
     }
     
-
-    /*Résponsive section trois*/
-    #listeVehiculesRecents{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .bordureBasse{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .prix, .prixTrois{
-        margin-left: 0;
-    }
-
-    /*Responsive section quatre*/
-
-    #detailQualiteService{
-        flex-wrap: wrap;
-    }
-
 }
 }
