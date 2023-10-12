@@ -3,116 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CLUB AUTO - Page vente </title>
+    <title>CLUB AUTO - Page de vente </title>
     <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/vente.css">
 </head>
 <body>
     <!--Début du Header-->
     <header id="mainHeader">
-        <a href="/index.html"><h1>CLUB AUTO</h1></a>
-        <ul>
-            <li><img src="../images/icone-adresse.png" alt="Logo représentant la position d'un lieu sur une carte">
-                <p><span>ADRESSE:</span><br> AVENUE CHARLES DE GAULLE<br>75000 PARIS</p>
-            </li>
-            <li><img src="../images/icon-telephone.png" alt="Logo représentant un téléphone">
-                <p><span>TELEPHONE:</span><br>0123456769</p>
-            </li>
-            <li>
-                <p><span>OUVERTURE:</span> Du lundi au samedi<br><span>HORAIRES:</span> De 9h à 17h</p>
-            </li>
-        </ul>
-        <a href="https://www.facebook.com/" ><img src="../images/iconeFacebook.png" alt="Logo de facebook redirigeant sur la page officielle"></a>
-        <a href="https://twitter.com/"><img src="../images/iconetwitter.png" alt="Logo de twitter redirigeant sur la page officielle"></a>
+        <div id="menuBurger">
+            <div id="titreSite" >
+                <a href="../HTML/index.html" class="headerMobile">CLUB AUTO</a>
+            </div>
+            <button id="boutonMenuBurger">
+                <img src="../images/MenuBurger.png" alt="Menu depliant du site Club Auto" id="imageBurgerMenu">
+            </button>
+        </div>
+        <div id="topInfo">
+            <div id="titreSite">
+                <a href="../HTML/index.html"><h1>CLUB AUTO</h1></a>
+            </div>
+            <div class="detailTopInfo">
+                <img src="../images/icone-adresse.png" alt="icone représentant une localisation sur une carte" class="logoSize">
+                <p><span>ADRESSE :</span><br> AVENUE CHARLES DE GAULLE<br>75000 PARIS</p>
+            </div>
+            <div class="detailTopInfo">
+                <img src="../images/icon-telephone.png" alt="icone représentant un téléphone" class="logoSize">
+                <p><span>TELEPHONE&nbsp;:</span><br>01 23 45 67 89</p>
+            </div>
+            <div class="detailTopInfo">
+                <p><span>OUVERTURE :</span> Du lundi au samedi<br><span>HORAIRES :</span> De 9h à 17h</p>
+            </div>
+            <div id="logoMainHeader">
+                <a href="https://www.facebook.com/"><img src="../images/iconeFacebook.png" alt="logo de Facebook" class="logoSize"></a>
+                <a href="https://twitter.com/"><img src="../images/iconetwitter.png" alt="Logo de Twitter" class="logoSize"></a>
+            </div>
+        </div>
+        
+        <div class="detailTopInfo" id="telephone">
+            <img src="../images/icon-telephone.png" alt="icone représentant un téléphone" class="logoSize">
+            <p><span>TELEPHONE :</span><br>01 23 45 67 89</p>
+        </div>
+        
         <!--Barre de Navigation-->
         <nav id="mainNav">
             <ul>
-                <li><a href="/index.html" >ACCUEIL</a></li>
+                <li><a href="/index.html">ACCUEIL</a></li>
                 <li><a href="/vente.html">VENTE</a></li>
-                <li><a href="/location.html">LOCATION</a></li>
+                <li><a href="/location.html">LOCATION</a></li> 
                 <li><a href="/contact.html">CONTACT</a></li>
             </ul>
-            <div><img src="../images/vente-location.jpg" alt="Photo montrant une femme assise dans le coffre d'une voiture"></div>
+            <p id="venteDesktop">VENTE</p>
         </nav>
    </header>
    <!--Fin du Header-->
-
-   <!--Début de la pge main-->
-   <section id="mainContent">
-        <div id="ordrePreferences">
-            <label for="preferences">ORDRE</label>
-            <select name="preferences" id="preferences">
-                <option value="option1">Prix: Croissant</option>
-                <option value="option2">Prix: Décroissant</option>
-                <option value="option3">Option3</option>
-                <option value="option4">Option4</option>
-
-            </select>
+   <!--Début de la page main-->
+    <div id="entete">
+        <img src="../images/vente-location.jpg" alt="Image montrant une femme assise dans le coffre d'une voiture" id="imageEntete" >
+        <div>
+            <p id="vente">VENTE</p>
         </div>
-
-        <section>
-            <div>
-                <img src="../images/vehicule2.jpg" alt=" image montrant une BMW 535l">
-                <h3>BMW 535l, NAVI, LEATHER, ABS</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem est rem natus ullam tenetur fugit! Aliquam nam impedit nisi quibusdam.</p>
-                <a href="#">&raquo;En savoir plus&laquo;</a>
-                <p>5 000€</p>
-            </div>
-            <div>
-                <img src="../images/vehicule2.jpg" alt=" image montrant une BMW 535l">
-                <h3>BMW 535l, NAVI, LEATHER, ABS</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem est rem natus ullam tenetur fugit! Aliquam nam impedit nisi quibusdam.</p>
-                <a href="#">&raquo;En savoir plus&laquo;</a>
-                <p>5 000€</p>
-            </div>
-            <div>
-                <img src="../images/vehicule2.jpg" alt=" image montrant une BMW 535l">
-                <h3>BMW 535l, NAVI, LEATHER, ABS</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem est rem natus ullam tenetur fugit! Aliquam nam impedit nisi quibusdam.</p>
-                <a href="#">&raquo;En savoir plus&laquo;</a>
-                <p>5 000€</p>
-            </div>
-            <div>
-                <img src="../images/vehicule2.jpg" alt=" image montrant une BMW 535l">
-                <h3>BMW 535l, NAVI, LEATHER, ABS</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem est rem natus ullam tenetur fugit! Aliquam nam impedit nisi quibusdam.</p>
-                <a href="#">&raquo;En savoir plus&laquo;</a>
-                <p>5 000€</p>
-            </div>          
-        </section>
-
-        <aside>
-            <div>
+    </div>
+   <section id="mainContent">
+        <aside id="filtres">
+            <div id="rechercher">
                 <img src="../images/icone-voiture.png" alt="logo représentant une loupe sur une voiture">
                 <h3>Rechercher</h3>
             </div>
-            <div>
-                <div>
+            <div >
+                <div id="detailFiltre">
                     <label for="type">Type</label>
-                    <select name="type" id="type">
+                    <select name="type" id="type" class="filtreBaliseSelect" >
+                        <option value="Type" disabled selected>Type</option>
                         <option value="option1">option1</option>
                         <option value="option2">option2</option>
                         <option value="option3">option3</option>
                         <option value="option4">option4</option>
                     </select>
-
+                
+                
                     <label for="carburant">Carburant</label>
-                    <select name="carburant" id="carburant">
+                    <select name="carburant" id="carburant" class="filtreBaliseSelect">
+                        <option value="carburant" disabled selected>Carburant</option>
                         <option value="option1">option1</option>
                         <option value="option2">option2</option>
                         <option value="option3">option3</option>
                         <option value="option4">option4</option>
                     </select>
-
+                
+                
                     <label for="marque">Marque</label>
-                    <select name="marque" id="marque">
+                    <select name="marque" id="marque" class="filtreBaliseSelect">
+                        <option value="marque" disabled selected>Marque</option>
                         <option value="option1">option1</option>
                         <option value="option2">option2</option>
                         <option value="option3">option3</option>
                         <option value="option4">option4</option>
                     </select>
+                    
 
                     <label for="modele">Modèle</label>
-                    <select name="modele" id="modele">
+                    <select name="modele" id="modele" class="filtreBaliseSelect">
+                        <option value="modele" disabled selected>Modèle</option>
                         <option value="option1">option1</option>
                         <option value="option2">option2</option>
                         <option value="option3">option3</option>
@@ -120,7 +111,8 @@
                     </select>
 
                     <label for="maxKm">Kilométrage maximal</label>
-                    <select name="maxKm" id="maxKm">
+                    <select name="maxKm" id="maxKm" class="filtreBaliseSelect">
+                        <option value="kilometrageMax" disabled selected>Kilométrage maximal</option>
                         <option value="option1">option1</option>
                         <option value="option2">option2</option>
                         <option value="option3">option3</option>
@@ -128,62 +120,148 @@
                     </select>
 
                     <label for="anciennete">Antienneté</label>
-                    <select name="anciennete" id="anciennete">
+                    <select name="anciennete" id="anciennete" class="filtreBaliseSelect">
+                        <option value="anciennete" disabled selected>Ancienneté</option>
                         <option value="option1">option1</option>
                         <option value="option2">option2</option>
                         <option value="option3">option3</option>
                         <option value="option4">option4</option>
                     </select>
-                </div>
-                <div>
-                    <label for="prix">Prix</label>
-                    <input type="range" name="prix" id="prix" min="2000" max="8000">
-
-                </div>
-
+                
+                    <div id="choixPrix">
+                        <label for="prix" id="rangePrix">Prix</label>
+                        <input type="range" name="prix" id="prix" min="2000" max="8000" value="2000">
+                        <input type="range" name="prix" id="prix" min="2000" max="8000" value="80000">
+                    </div>
+                    <div id="affichagePrix">
+                        <p class="valeurPrix">2000</p>
+                        <p class="valeurPrix">80000</p>
+                    </div>
+                    <button id="boutonAside">Réinitialiser</button>
             </div>
-            <button>Réinitialiser</button>
-
         </aside>
+        <div id="contenuDeGauche">
+            <div id="ordrePreferences">
+                <label for="preferences" id="ordre">ORDRE&nbsp;:</label>
+                <div id="filtreDeroulant">
+                    <select name="preferences" id="preferences">
+                        <option value="option1">Prix: Croissant</option>
+                        <option value="option2">Prix: Décroissant</option>
+                        <option value="option3">Option3</option>
+                        <option value="option4">Option4</option>
 
-
-
-
-
-   </section>
+                    </select>
+                    <img src="../images/select.png" alt="Image représentant une fleche deroulante vers le bas" class="flecheDeroulante">
+                </div>
+            </div>
+            <div class="descriptionVehiculeVente">
+                <div class="imagePrixVehicule">
+                    <img src="../images/vehicule2.jpg" alt=" image montrant une BMW 535l">
+                    <p class="prixVehiculeVente">5 000€</p>
+                </div>
+                <div class="titreParagrapheDesktop">
+                    <div class="titrePrixDesktop">
+                        <h3>BMW 535l, NAVI, LEATHER, ABS</h3>
+                        <p class="prixVehiculeVenteDesktop">5&nbsp;000€</p>
+                    </div>
+                    <p class="texteVehiculeVente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem est rem natus ullam tenetur fugit! Aliquam nam impedit nisi quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, non?</p>
+                    <a href="#">&raquo; En savoir plus &laquo;</a>
+                </div>
+            </div>
+            <div class="descriptionVehiculeVente">
+                <div class="imagePrixVehicule">
+                    <img src="../images/vehicule2.jpg" alt=" image montrant une BMW 535l">
+                    <p class="prixVehiculeVente">5 000€</p>
+                </div>
+                <div class="titreParagrapheDesktop">
+                    <div class="titrePrixDesktop">
+                        <h3>BMW 535l, NAVI, LEATHER, ABS</h3>
+                        <p class="prixVehiculeVenteDesktop">5&nbsp;000€</p>
+                    </div>
+                    <p class="texteVehiculeVente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem est rem natus ullam tenetur fugit! Aliquam nam impedit nisi quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, non?</p>
+                    <a href="#">&raquo; En savoir plus &laquo;</a>
+                </div>
+            </div>
+            <div class="descriptionVehiculeVente">
+                <div class="imagePrixVehicule">
+                    <img src="../images/vehicule2.jpg" alt=" image montrant une BMW 535l">
+                    <p class="prixVehiculeVente">5 000€</p>
+                </div>
+                <div class="titreParagrapheDesktop">
+                    <div class="titrePrixDesktop">
+                        <h3>BMW 535l, NAVI, LEATHER, ABS</h3>
+                        <p class="prixVehiculeVenteDesktop">5&nbsp;000€</p>
+                    </div>
+                    <p class="texteVehiculeVente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem est rem natus ullam tenetur fugit! Aliquam nam impedit nisi quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, non?</p>
+                    <a href="#">&raquo; En savoir plus &laquo;</a>
+                </div>
+            </div>
+            <div class="descriptionDernierVehiculeVente">
+                <div class="imagePrixVehicule">
+                    <img src="../images/vehicule2.jpg" alt=" image montrant une BMW 535l">
+                    <p class="prixVehiculeVente">5 000€</p>
+                </div>
+                <div class="titreParagrapheDesktop">
+                    <div class="titrePrixDesktop">
+                        <h3>BMW 535l, NAVI, LEATHER, ABS</h3>
+                        <p class="prixVehiculeVenteDesktop">5&nbsp;000€</p>
+                    </div>
+                    <p class="texteVehiculeVente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem est rem natus ullam tenetur fugit! Aliquam nam impedit nisi quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, non?</p>
+                    <a href="#">&raquo; En savoir plus &laquo;</a>
+                </div>
+            </div>
+        </div>  
+    </section>
+    
    <!--Fin de la page main-->
 
     <!--Début de Footer-->
     <footer id="mainFooter">
-        <div>
-            <p>
-                <h4><span>CLUB</span> AUTO</h4>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, exercitationem facere! Consequuntur consequatur, ipsam fugiat repellat minima corporis libero dignissimos.
-            </p>
-            <p>
-                <h4>HORAIRE D'OUVERTURE</h4>
-                lundi-samedi: 09:00 - 17:00<br>
-                Dimanche et jours fériés: Fermé
-            </p>
-            <form>
-                <label for="emailNews" >NEWSLETTER</label>
-                <input type="email" name="emailNews" id="emailNews">
-                <button><img src="../images/iconereseau.png" alt="Une icone représentant une réception de réseau"></button><br>
-                <p>Inscrivez-vous pour recevoir les<br>
-                dernières offres</p>
-            </form>
+        <section id="contenuFooter">
             <div>
-                <h4>RESEAUX SOCIAUX</h4>
-                <div>
-                    <a href="https://www.facebook.com/"><img src="../images/iconeFacebook.png" alt="logo reseau social facebook"></a>
-                    <a href="https://twitter.com/"><img src="../images/iconetwitter.png" alt="logo reseau social twitter"></a>
-                    <a href="https://www.instagram.com/"><img src="../images/iconeInstagram.png" alt="logo reseau social instagram"></a>
-                    <a href="https://fr.wikipedia.org/wiki/Google%2B"><img src="../images/iconeGoogle+.png" alt="logo reseau social google+"></a>
-                    <a href="https://www.youtube.com/"><img src="../images/iconeYoutube.png" alt="logo reseau social youtube"></a> 
+                
+                    <h4><span>CLUB</span> AUTO</h4>
+                <p id="paragrapheFooterUn">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, exercitationem facere! 
+                </p>
+            </div>
+            <div>
+                
+                    <h4 id="horaireFooter">HORAIRE D'OUVERTURE</h4>
+                <p id="paragrapheFooterDeux">    
+                    lundi - Samedi : <span>09:00 - 17:00</span><br>
+                    Dimanche et jours fériés : <span>Fermé</span>
+                </p>
+            </div>
+            <div>
+                <form>
+                    <div>
+                        <label for="emailNews" >NEWSLETTER</label>
+                    </div>
+                    <div id="inputFooter">
+                        <input type="email" name="emailNews" id="emailNews" placeholder="Entrez votre email">
+                        <button class="logoForm"><img src="../images/iconereseau.png" alt="Une icone représentant une réception de réseau" class="logoSize"></button>
+                    </div>
+                    <p>Inscrivez-vous pour recevoir les
+                    dernières offres</p>
+                </form>
+            </div>
+            <div id="reseauxSociaux">
+                <h4 id="titreReseauxFooter">RESEAUX SOCIAUX</h4>
+                <div id="logoReseauxFooter" >
+                    <a href="https://www.facebook.com/"><img src="../images/iconeFacebook.png" alt="logo reseau social facebook" class="logoSize"></a>
+                    <a href="https://twitter.com/"><img src="../images/iconetwitter.png" alt="logo reseau social twitter" class="logoSize"></a>
+                    <a href="https://www.instagram.com/"><img src="../images/iconeInstagram.png" alt="logo reseau social instagram" class="logoSize"></a>
+                    <a href="https://fr.wikipedia.org/wiki/Google%2B"><img src="../images/iconeGoogle+.png" alt="logo reseau social google+" class="logoSize"></a>
+                    <a href="https://www.youtube.com/"><img src="../images/iconeYoutube.png" alt="logo reseau social youtube" class="logoSize"></a>
                 </div>
             </div>
+        </section>
+        <div id="copyRight">
+            <p>
+                Copyright &copy; Club Auto - Tous droits réservés
+            </p>
         </div>
-        <p>Copyright &copy; Club Auto - Tous droits réservés</p>
     </footer>
     <!--Fin du footer-->
 </body>

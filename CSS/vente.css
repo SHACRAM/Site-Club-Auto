@@ -1,0 +1,807 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+
+:root{
+    --white: #FFFFFF;
+    --yellow: #fab637d6;
+    --pink: #ff4848c5;
+    --orange: #CC6119;
+    --snow: #eceff317;
+    --darkGrey: #232628;
+    --blue: #6C98E1;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--darkGrey);
+}
+a{
+    text-decoration: none;
+    
+}
+/*informations haut du header*/
+span{
+    color: rgb(244, 96, 4);
+}
+
+.logoSize{
+    height: 3em;
+    width: 3em;
+}
+
+.logoSize:hover{
+    background-color: white;
+}
+
+
+#topInfo{
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    gap: 5em;
+     
+}
+#topInfo p, h1{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#topInfo h1{
+    font-family: Monserrat, Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--white);  
+}
+
+#titreSite{
+    display: flex;
+    align-items: center;
+}
+
+.detailTopInfo{
+    font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--white);
+    display: flex;
+    gap: 0.5em;  
+}
+
+#logoMainHeader{
+    display: flex;
+    gap: 0.5em;
+}
+
+/* Barre de navigation*/
+
+#menuBurger{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+    padding-right: 2em;
+    align-items: center;
+    
+
+}
+
+#imageBurgerMenu{
+    height: 50px;
+    width: 50px;
+
+
+}
+
+#boutonMenuBurger{
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    padding: 0;
+    
+    
+    
+}
+
+#mainNav ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0;
+    padding-right: 12em;
+    background-color: rgba(255, 255, 255, 0.621);
+    flex-wrap: wrap;
+}
+
+#mainNav a{
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: black
+    
+}
+
+#mainNav li{
+    height: 3em;
+    width: fit-content;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    align-items: center;
+    
+}
+#mainNav li:hover{
+    background-color: rgb(244, 96, 4);
+}
+#mainNav a:hover{
+    color: var(--white);
+}
+
+#mainNav{
+    height: 30em;
+    width: 100%;
+    background-image: url(../images/vente-location.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#entete{
+    position: relative;
+}
+
+
+#imageEntete{
+    width: 100%;
+    filter:brightness(70%);
+}
+#vente{
+    font-size: 4rem;
+    color: var(--white);
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding-left: 0.5em;
+    padding-top: 1em;
+    position: absolute;
+    top: 0;
+}
+/*Fin du header*/
+
+/*Début de la section main*/
+
+#mainContent{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    position: relative;
+    padding-left: 2em;
+    padding-right: 2em;
+
+}
+
+/*Début de la mise en page de la balise aside*/
+
+#filtres{
+    display:flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+    height: 80em;
+    
+    
+    
+
+}
+
+#rechercher{
+    background-color: var(--darkGrey);
+    color: var(--white);
+    font-family: Open sans, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    padding: 1em;
+}
+#rechercher img{
+    width: 60px;
+    height: 50px;
+}
+
+#detailFiltre{
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+}
+
+.filtreBaliseSelect{
+    background-color: rgba(128, 128, 128, 0.224);
+    height: 3em;
+    border: none;
+    font-size: 1.5rem;
+    font-family: Open sans, Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 1em;
+}
+
+#choixPrix{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+    gap: 1em;
+}
+
+#rangePrix{
+    color: black;
+    font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+#affichagePrix{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    gap: 1.5em;
+}
+
+.valeurPrix{
+    background-color: rgba(128, 128, 128, 0.224);
+    font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin:0;
+}
+
+#boutonAside{
+    background-color: var(--blue);
+    font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    color: var(--white);
+    border: none;
+    font-weight: bold;
+    width: 100%;
+    padding:0 ;
+    height: 2.3em;
+    border-radius: 5px 5px 5px 5px;
+    border-bottom: 4px solid #506c9a;
+    margin-top: 3em;
+}
+
+/*Début de la première section*/
+
+#ordrePreferences select{
+    background-color:rgba(128, 128, 128, 0.224);
+    margin: 2em 0 2em 0;
+    height: 2.5em;
+    font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    padding-left: 1em;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-bottom: 0;
+}
+
+.flecheDeroulante{
+    width: 30px;
+    height: 20px;
+    background-color: rgba(128, 128, 128, 0.224);
+    margin-top: 3em;
+    padding: 1.5em 1em 1em 0;
+}
+
+#filtreDeroulant{
+    display: flex;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.224);
+    padding-bottom: 3em;
+}
+
+.imagePrixVehicule{
+    position: relative;
+}
+
+.imagePrixVehicule img{
+    width: 100%;
+    padding-top: 4em;
+}
+
+.prixVehiculeVente{
+    background-color: var(--blue);
+    width: fit-content;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5em 0.5em 0.5em 1.5em;
+    color: var(--white);
+    font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: 6px;
+}
+
+
+
+.descriptionVehiculeVente h3{
+    font-family: Montserrat,Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: 0;
+    padding-top: 1.5em;
+}
+
+.texteVehiculeVente{
+    font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    color: grey;
+}
+
+.descriptionVehiculeVente a{
+    color: black;
+    font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+   
+}
+
+.descriptionVehiculeVente{
+    border-bottom:2px solid rgba(128, 128, 128, 0.224);
+    padding-bottom: 5em;
+}
+
+#dernierDescriptionVehiculeVente{
+    margin-bottom: 8em;
+}
+
+
+
+
+
+
+    
+
+
+
+
+
+/*Début du footer*/
+
+#mainFooter{
+    display: flex;
+    flex-direction: column;
+    padding: 3em 2em 2em 2em;
+ }
+ 
+ #mainFooter p{
+     color: rgb(154, 152, 152);
+     font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
+     line-height: 1.5em;
+     font-weight: bold;
+     font-size: 1.5rem;
+     margin-bottom: 1.5em;
+ }
+ 
+ #mainFooter h4,label{
+     font-size:1.8rem;
+     font-weight: bold;
+     margin-top: 0;
+ }
+ 
+ #contenuFooter h4, label{
+     color: var(--white);
+     font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ #horaireFooter{
+    margin-bottom: 1em;
+ }
+
+ #paragrapheFooterUn{
+    padding-bottom: 2em;
+ }
+
+ #paragrapheFooterDeux{
+   padding-bottom: 1em;
+   margin-top: 0;
+ }
+
+ #titreReseauxFooter{
+    padding-top: 1.5em;
+ }
+ 
+ 
+ #contenuFooter span{
+     color: var(--blue);
+ }
+ 
+ #contenuFooter p span{
+     color: var(--white);
+ }
+ 
+ #reseauxSociaux{
+     display: flex;
+     flex-direction: column;
+     
+ }
+ 
+ #logoReseauxFooter{
+     display: flex;
+     gap: 0.5em;
+     border-bottom: 2px solid grey;
+     padding-bottom: 2em;
+ 
+ 
+ }
+ .logoForm{
+     height: 4em;
+     width: 4em;
+     border: none;
+     padding: 0;
+ }
+ 
+ .logoForm img{
+     height: 4em;
+     width: 4em;
+ }
+ 
+ #emailNews{
+     font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
+ }
+ 
+ #contenuFooter input{
+     height: 4em;
+     width: 25em;
+     border: none;
+     padding: 0;
+     padding-left: 1em;
+ }
+ 
+ #inputFooter{
+     display: flex;
+     margin-top: 1.5em;
+     
+ }
+ 
+ #copyRight{
+     display: flex;
+     justify-content: center;
+     margin-top: 1.5em;
+ }
+ 
+ #copyRight p{
+     font-size: 1.2rem;
+ }
+
+
+
+
+ /*Début des médias queries*/
+
+@media only screen and (max-width: 767px){
+    /*Médias queries pour la version mobile*/
+    #topInfo{
+        display: none;
+    }
+    #mainNav{
+        display: none;
+    }
+    #titrePresentation{
+        font-size: 3em;
+        padding-left: 1em;
+    }
+    .headerMobile{
+        color: var(--white);
+        font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 3rem;
+        padding-left: 0.5em;
+        margin-top: 0;
+    }
+   
+
+    #telephone{
+        display: block;
+        display: flex;
+        font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
+        color: var(--white);
+        font-size: 1.5rem;
+        padding-left: 1em;
+        margin-top: 2em;
+       
+    }
+    .logoSize{
+        width: 60px;
+        height: 60px;
+    }
+    
+
+    #telephone p{
+        margin-top: 0;
+    }
+
+    #ordre{
+        display: none;
+    }
+
+}
+
+@media only screen and ( min-width: 768px){
+    #entete{
+        display: none;
+    }
+    
+    #menuBurger{
+        display: none;
+    }
+    #telephone{
+        display: none;
+    }
+
+    #ordre{
+        display: none;
+    }
+
+    #venteDesktop{
+        font-size: 4rem;
+        color: var(--white);
+        font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        padding-left: 0.5em;
+        padding-top: 1em;
+        position: absolute;
+        top: 3.5em;
+        left: 1.5em;
+    }
+    
+    
+    /*Début des médias queries du footer*/
+
+    #mainFooter{
+        padding:3em 5em 2em 5em;
+    }
+
+    #contenuFooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 4em;
+        border-bottom: 2px solid grey;
+        flex-wrap: wrap;
+        
+    }
+    #mainFooter h4,label{
+        font-size:1.2rem;
+        font-weight: bold;
+        margin-top: 0;
+    }
+
+    #contenuFooter p{
+        font-size: 0.9rem;
+    }
+
+    #logoReseauxFooter{
+        border: none;
+    }
+
+    #contenuFooter input{
+        height: 2.5em;
+        width: 15em;
+    }
+
+    .logoForm{
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    .logoForm img{
+        display: flex;
+        gap: 2em;
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    #copyRight p{
+        font-size: 0.9rem;
+        margin-bottom: 0;
+    }
+    /*Fin du footer*/
+
+@media only screen and (min-width:480px) and ( max-width:1023px){
+    #detailFiltre{
+        padding: 3em 7em 3em 7em;
+    }
+
+   
+}
+
+/*Médias queries pour la balise aside et du contenu de gauche*/
+@media only screen and (min-width: 1024px) {
+    #mainContent{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 3em;
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+
+    #ordrePreferences{
+        display: flex;
+        border-bottom: 2px solid rgba(128, 128, 128, 0.224);
+    }
+
+    #filtreDeroulant{
+        border: none;
+    }
+
+    #ordre{
+        font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5rem;
+        color: black;
+        display: flex;
+        align-items: center;
+        padding-right: 1em;
+
+    }
+}
+
+@media only screen and (min-width: 1600px){
+    .prixVehiculeVente{
+        display: none;
+    }
+
+    .descriptionVehiculeVente{
+        display: flex;
+        gap: 2em;
+        padding-top: 4em;
+        padding-bottom: 2em;
+    }
+
+    .imagePrixVehicule img{
+        padding-top: 0;
+    }
+
+    .titreParagrapheDesktop h3{
+        padding-top: 0;
+    }
+
+   .titrePrixDesktop{
+        display: flex;
+        gap: 4em
+   }
+
+    .prixVehiculeVenteDesktop{
+        background-color: var(--blue);
+        width: fit-content;
+        height: fit-content;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 0.5em 0.5em 0.5em 1.5em;
+        color: var(--white);
+        font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        
+    }
+
+    .descriptionDernierVehiculeVente{
+        display: flex;
+        gap: 2em;
+        padding-top: 6em;
+        padding-bottom: 2em;
+        border-bottom: 2px solid rgba(128, 128, 128, 0.224);
+        margin-bottom: 6em;
+    }
+
+    .descriptionDernierVehiculeVente h3{
+        font-family: Montserrat,Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: 1.8rem;
+        margin: 0;
+
+    }
+    
+    
+    .descriptionDernierVehiculeVente a{
+        color: black;
+        font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5rem;
+       
+    }
+
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1599px){
+    .prixVehiculeVente{
+        display: none;
+    }
+
+
+    .descriptionVehiculeVente{
+        display: flex;
+        gap: 1em;
+        padding-top: 4em;
+        padding-bottom: 2em;
+    }
+
+    .imagePrixVehicule img{
+        padding-top: 0;
+    }
+
+    .titreParagrapheDesktop h3{
+        padding-top: 0;
+    }
+
+   .titrePrixDesktop{
+        display: flex;
+        gap: 1em
+   }
+
+    .prixVehiculeVenteDesktop{
+        background-color: var(--blue);
+        width: fit-content;
+        height: fit-content;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 0.5em 0.5em 0.5em 1.5em;
+        color: var(--white);
+        font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        
+    }
+     .texteVehiculeVente{
+        font-size: 1.5rem;
+     }
+
+    .descriptionDernierVehiculeVente{
+        display: flex;
+        gap: 2em;
+        padding-top: 6em;
+        padding-bottom: 2em;
+        border-bottom: 2px solid rgba(128, 128, 128, 0.224);
+        margin-bottom: 6em;
+    }
+
+    .descriptionDernierVehiculeVente h3{
+        font-family: Montserrat,Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: 1.8rem;
+        margin: 0;
+
+    }
+    
+    
+    .descriptionDernierVehiculeVente a{
+        color: black;
+        font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5rem;
+       
+    }
+
+}
+
+/*Masque le deuxième prix des vehicules entre 480px et 1399px*/
+@media only screen and (min-width:480px) and ( max-width:1399px){
+    .prixVehiculeVenteDesktop{
+        display: none;
+    }
+
+} 
+
+    
+
+
+@media only screen and (max-width: 1200px){
+
+    /*Responsive des informations du header*/
+    #topInfo{
+        width: 100%;
+        gap: 2em;
+    }
+    
+    /*responsive de la barre de navigation*/
+    #mainNav ul{
+        padding:0;
+        justify-content: center;
+    }
+    
+}
+}
