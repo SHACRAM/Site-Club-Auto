@@ -146,10 +146,6 @@ span{
     position: relative;
 }
 
-#vente{
-    position: absolute;
-    top: 0;
-}
 
 #imageEntete{
     width: 100%;
@@ -162,6 +158,8 @@ span{
     font-weight: bold;
     padding-left: 0.5em;
     padding-top: 1em;
+    position: absolute;
+    top: 0;
 }
 /*Fin du header*/
 
@@ -174,6 +172,7 @@ span{
     position: relative;
     padding-left: 2em;
     padding-right: 2em;
+
 }
 
 /*Début de la mise en page de la balise aside*/
@@ -182,10 +181,11 @@ span{
     display:flex;
     flex-direction: column;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+    height: 80em;
     
     
     
-    
+
 }
 
 #rechercher{
@@ -536,6 +536,22 @@ span{
     #telephone{
         display: none;
     }
+
+    #ordre{
+        display: none;
+    }
+
+    #venteDesktop{
+        font-size: 4rem;
+        color: var(--white);
+        font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        padding-left: 0.5em;
+        padding-top: 1em;
+        position: absolute;
+        top: 3.5em;
+        left: 1.5em;
+    }
     
     
     /*Début des médias queries du footer*/
@@ -590,14 +606,189 @@ span{
     }
     /*Fin du footer*/
 
+@media only screen and (min-width:480px) and ( max-width:1023px){
+    #detailFiltre{
+        padding: 3em 7em 3em 7em;
+    }
 
-@media only screen and (min-width: 1024px) {
-    
-
-    
+   
 }
 
+/*Médias queries pour la balise aside et du contenu de gauche*/
+@media only screen and (min-width: 1024px) {
+    #mainContent{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 3em;
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+
+    #ordrePreferences{
+        display: flex;
+        border-bottom: 2px solid rgba(128, 128, 128, 0.224);
+    }
+
+    #filtreDeroulant{
+        border: none;
+    }
+
+    #ordre{
+        font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5rem;
+        color: black;
+        display: flex;
+        align-items: center;
+        padding-right: 1em;
+
+    }
+}
+
+@media only screen and (min-width: 1600px){
+    .prixVehiculeVente{
+        display: none;
+    }
+
+    .descriptionVehiculeVente{
+        display: flex;
+        gap: 2em;
+        padding-top: 4em;
+        padding-bottom: 2em;
+    }
+
+    .imagePrixVehicule img{
+        padding-top: 0;
+    }
+
+    .titreParagrapheDesktop h3{
+        padding-top: 0;
+    }
+
+   .titrePrixDesktop{
+        display: flex;
+        gap: 4em
+   }
+
+    .prixVehiculeVenteDesktop{
+        background-color: var(--blue);
+        width: fit-content;
+        height: fit-content;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 0.5em 0.5em 0.5em 1.5em;
+        color: var(--white);
+        font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        
+    }
+
+    .descriptionDernierVehiculeVente{
+        display: flex;
+        gap: 2em;
+        padding-top: 6em;
+        padding-bottom: 2em;
+        border-bottom: 2px solid rgba(128, 128, 128, 0.224);
+        margin-bottom: 6em;
+    }
+
+    .descriptionDernierVehiculeVente h3{
+        font-family: Montserrat,Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: 1.8rem;
+        margin: 0;
+
+    }
     
+    
+    .descriptionDernierVehiculeVente a{
+        color: black;
+        font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5rem;
+       
+    }
+
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1599px){
+    .prixVehiculeVente{
+        display: none;
+    }
+
+
+    .descriptionVehiculeVente{
+        display: flex;
+        gap: 1em;
+        padding-top: 4em;
+        padding-bottom: 2em;
+    }
+
+    .imagePrixVehicule img{
+        padding-top: 0;
+    }
+
+    .titreParagrapheDesktop h3{
+        padding-top: 0;
+    }
+
+   .titrePrixDesktop{
+        display: flex;
+        gap: 1em
+   }
+
+    .prixVehiculeVenteDesktop{
+        background-color: var(--blue);
+        width: fit-content;
+        height: fit-content;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 0.5em 0.5em 0.5em 1.5em;
+        color: var(--white);
+        font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        
+    }
+     .texteVehiculeVente{
+        font-size: 1.5rem;
+     }
+
+    .descriptionDernierVehiculeVente{
+        display: flex;
+        gap: 2em;
+        padding-top: 6em;
+        padding-bottom: 2em;
+        border-bottom: 2px solid rgba(128, 128, 128, 0.224);
+        margin-bottom: 6em;
+    }
+
+    .descriptionDernierVehiculeVente h3{
+        font-family: Montserrat,Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: 1.8rem;
+        margin: 0;
+
+    }
+    
+    
+    .descriptionDernierVehiculeVente a{
+        color: black;
+        font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5rem;
+       
+    }
+
+}
+
+/*Masque le deuxième prix des vehicules entre 480px et 1399px*/
+@media only screen and (min-width:480px) and ( max-width:1399px){
+    .prixVehiculeVenteDesktop{
+        display: none;
+    }
+
+} 
+
+    
+
+
 @media only screen and (max-width: 1200px){
 
     /*Responsive des informations du header*/
