@@ -115,15 +115,17 @@ span{
     justify-content: flex-end;
     margin-top: 0;
     padding-right: 12em;
-    background-color: rgba(255, 255, 255, 0.621);
+    background-color: rgba(255, 255, 255, 0.883);
     flex-wrap: wrap;
+    margin-bottom: 0;
 }
 
 #mainNav a{
     font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     font-size: 1rem;
-    color: black
+    color: black;
+    
     
 }
 
@@ -135,6 +137,7 @@ span{
     display: flex;
     align-items: center;
     
+    
 }
 #mainNav li:hover{
     background-color: rgb(244, 96, 4);
@@ -144,12 +147,9 @@ span{
 }
 
 #mainNav{
-    height: 30em;
-    width: 100%;
-    background-image: url(../images/vehicule3.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: top;
+    height: 3em;
+    width: 100%; 
+      
 }
 
 
@@ -422,6 +422,38 @@ span{
         display: none;
     }
 
+    /*Début des médias queries pour le main content*/
+
+    #mainContent{
+        padding: 0em 5em 2em 5em;
+    }
+
+    #filAriane{
+        margin: 0;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        font-size: 0.5rem;
+    }
+
+    #contenuPrincipal h2{
+        padding-top: 0;
+        margin-bottom: 0.5em;
+        font-size: 2rem;
+
+    }
+
+    #detailVoiture{
+        display: flex;
+        flex-direction: row;
+        margin-top: 3em;
+    }
+
+    #detailVoiture li{
+        font-size: 1rem;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
     
     
     /*Début des médias queries du footer*/
@@ -477,16 +509,23 @@ span{
     /*Fin du footer*/
 
 
-@media only screen and ( min-width: 1200px){
+@media only screen and ( min-width: 1400px){
+    #mainContent{
+        padding: 0em 10em 2em 10em;
+    }
+
+
+    #contenuPrincipalInfo{
+        width: 70%;
+    }
+    #contenuPrincipal img{
+        width: 100%;
+    }
+
 
     
 }
 
-
-@media only screen and ( min-width: 1600px){
-    
-
-}
 
 @media only screen and ( min-width: 1400px){
     #contenuFooter{
@@ -499,7 +538,7 @@ span{
 
 
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1400px){
 
     /*Responsive des informations du header*/
     #topInfo{
