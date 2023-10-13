@@ -858,9 +858,14 @@ span{
     }
 
 }
+
+@media only screen and ( min-width: 1400px){
+    #contenuFooter{
+        flex-wrap: nowrap;
+    }
+
 }
-
-
+}
 
 
 
