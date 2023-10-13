@@ -54,7 +54,7 @@ span{
     color: var(--white);  
 }
 
-#titreSite{
+.titreSite{
     display: flex;
     align-items: center;
 }
