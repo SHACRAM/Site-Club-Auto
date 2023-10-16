@@ -63,7 +63,8 @@ span{
     font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
     color: var(--white);
     display: flex;
-    gap: 0.5em;  
+    gap: 0.5em;
+    
 }
 
 #logoMainHeader{
@@ -201,6 +202,7 @@ span{
     display: flex;
     flex-direction: column;
     gap: 3em;
+    margin-bottom: 3em;
 }
 
 .mepFormulaire{
@@ -388,6 +390,8 @@ span{
         font-size: 1.5rem;
         padding-left: 1em;
         margin-top: 2em;
+
+        
        
     }
     .logoSize{
@@ -457,6 +461,10 @@ span{
         padding:3em 5em 2em 5em;
     }
 
+    #paragrapheFooterUn{
+        width: 28em;
+    }
+
     #contenuFooter{
         display: flex;
         flex-direction: row;
@@ -509,8 +517,8 @@ span{
     #contenuPrincipal{
         top: 8em;
         height: 30em;
-        margin-right: 8em;
-        margin-left: 8em;
+        margin-right: 12em;
+        margin-left: 12em;
         padding-right: 7em;
         padding-left: 7em;
     }
@@ -534,7 +542,7 @@ span{
 
     #formulaireHaut{
         height: fit-content;
-        gap: 2em;
+        gap: 2.5em;
         width: 30em;
     }
 
@@ -551,6 +559,7 @@ span{
     #formulaireBas{
         align-items: flex-start;
         gap: 0;
+        padding-left: 1.5em;
     }
 
     ::placeholder{
