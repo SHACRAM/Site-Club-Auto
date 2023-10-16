@@ -657,6 +657,8 @@ span{
     #imageDeuxiemeArticle{
         width: 50%;
         height: 50%;
+        
+        
     }
 
     #deuxiemeArticle{
@@ -747,12 +749,13 @@ span{
     #mainDernierePresentation{
         background-size: 100%;
         background-position: top; 
+        padding-left: 6em;
         padding-top: 5em;
         padding-bottom: 5em;
     }
 
     #articleDernierePresentation{
-        width: 550px;
+        width: 500px;
         height: 200px;
         padding: 0;
         margin-left: 6em;
@@ -772,6 +775,10 @@ span{
 
     #mainFooter{
         padding:3em 6em 2em 6em;
+    }
+
+    #premierParagrapheFooter{
+        width: 28em;
     }
 
     #contenuFooter{
@@ -833,6 +840,8 @@ span{
         padding:0;
         justify-content: center;
     }
+
+
     
 
     /*Résponsive section trois*/
@@ -858,7 +867,25 @@ span{
     }
 
 }
+
+@media only screen and ( min-width: 1400px){
+    #contenuFooter{
+        flex-wrap: nowrap;
+    }
+
 }
+
+
+@media only screen and ( min-width: 1400px){
+    /*Responsive du main*/
+
+    #mainPresentation{
+        padding: 3em 14em 3em 14em;
+    }
+
+}
+}
+
 
 
 
