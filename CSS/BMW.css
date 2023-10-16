@@ -442,6 +442,10 @@ span{
 
     }
 
+    #paragrapheUn{
+        font-size: 1.8rem;
+    }
+
     #detailVoiture{
         display: flex;
         flex-direction: row;
@@ -475,6 +479,10 @@ span{
         font-size:1.2rem;
         font-weight: bold;
         margin-top: 0;
+    }
+
+    #paragrapheFooterUn{
+        width: 28em;
     }
 
     #contenuFooter p{
