@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLUB AUTO - Page de contact </title>
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+</head>
+<body>
+    <!--Début du Header-->
+    <header id="mainHeader">
+        <div id="menuBurger">
+            <div class="titreSite">
+                <a href="../HTML/index.html" class="headerMobile">CLUB AUTO</a>
+            </div>
+            <button id="boutonMenuBurger">
+                <img src="../images/MenuBurger.png" alt="Menu depliant du site Club Auto" id="imageBurgerMenu">
+            </button>
+        </div>
+        <div id="topInfo">
+            <div class="titreSite">
+                <a href="../HTML/index.html"><h1>CLUB AUTO</h1></a>
+            </div>
+            <div class="detailTopInfo">
+                <img src="../images/icone-adresse.png" alt="icone représentant une localisation sur une carte" class="logoSize">
+                <p><span class="spanHeader">ADRESSE :</span><br> AVENUE CHARLES DE GAULLE<br>75000 PARIS</p>
+            </div>
+            <div class="detailTopInfo">
+                <img src="../images/icon-telephone.png" alt="icone représentant un téléphone" class="logoSize">
+                <p><span class="spanHeader">T&Eacute;L&Eacute;PHONE&nbsp;:</span><br>01 23 45 67 89</p>
+            </div>
+            <div class="detailTopInfo">
+                <p><span class="spanHeader">OUVERTURE :</span> Du lundi au samedi<br><span class="spanHeader">HORAIRES :</span> De 9h à 17h</p>
+            </div>
+            <div id="logoMainHeader">
+                <a href="https://www.facebook.com/"><img src="../images/iconeFacebook.png" alt="logo de Facebook" class="logoSize"></a>
+                <a href="https://twitter.com/"><img src="../images/iconetwitter.png" alt="Logo de Twitter" class="logoSize"></a>
+            </div>
+        </div>
+        
+        <div class="detailTopInfo" id="telephoneHeader">
+            <img src="../images/icon-telephone.png" alt="icone représentant un téléphone" class="logoSize">
+            <p><span>T&Eacute;L&Eacute;PHONE :</span><br>01 23 45 67 89</p>
+        </div>
+        
+        <!--Barre de Navigation-->
+        <nav id="mainNav">
+            <ul>
+                <li><a href="/HTML/index.html">ACCUEIL</a></li>
+                <li><a href="/HTML/vente.html">VENTE</a></li>
+                <li><a href="/HTML/location.html">LOCATION</a></li> 
+                <li><a href="/HTML/contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+   </header>
+   <!--Fin du Header-->
+   <!--Début de la page main-->
+    <section id="mainContent">
+                <img src="../images/vehicule3.jpg" alt="Image représentant une voiture en gros plan" id="imageEntete">
+            <div id="contenuPrincipal">
+                <h2>CONTACTEZ NOUS</h2>
+            <form id="formulaire">
+                <div id="formulaireHaut">
+                    <div class="mepFormulaire">
+                        <label for="prenom">Prénom*</label>
+                        <input type="text" name="prenom" id="prenom" required placeholder="Entrez votre prénom">
+                    </div>
+                    <div class="mepFormulaire">
+                        <label for="nom">Nom*</label>
+                        <input type="text" name="nom" id="nom" required placeholder="Entrez votre nom">
+                    </div>
+                    <div class="mepFormulaire">
+                        <label for="email">Email*</label>
+                        <input type="email" name="email" id="email" required placeholder="Entrez une adresse mail valide">
+                    </div>
+                    <div class="mepFormulaire">
+                        <label for="telephone">Téléphone</label>
+                        <input type="tel" name="telephone" id="telephone" placeholder="Phone number">
+                    </div>
+                </div>
+                <div id="formulaireBas">
+                    <div id="textAreaFormulaire">
+                        <label for="textarea">Message</label>
+                        <textarea name="textarea" id="textarea" required placeholder="Ecrivez votre message"></textarea>
+                    </div>
+                    <button type="submit" id="submitFormulaire">ENVOYER</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+   <!--Fin de la page main-->
+
+    <!--Début de Footer-->
+    <footer id="mainFooter">
+        <section id="contenuFooter">
+            <div>
+                
+                    <h4><span>CLUB</span> AUTO</h4>
+                <p id="premierParagrapheFooter">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, exercitationem facere! 
+                </p>
+            </div>
+            <div>
+                
+                    <h4>HORAIRE D'OUVERTURE</h4>
+                <p>    
+                    lundi-samedi: <span>09:00 - 17:00</span><br>
+                    Dimanche et jours fériés: <span>Fermé</span>
+                </p>
+            </div>
+            <div>
+                <form>
+                    <div>
+                        <label for="emailNews" >NEWSLETTER</label>
+                    </div>
+                    <div id="inputFooter">
+                        <input type="email" name="emailNews" id="emailNews" placeholder="Entrez votre email">
+                        <button class="logoForm"><img src="../images/iconereseau.png" alt="Une icone représentant une réception de réseau" class="logoSize"></button>
+                    </div>
+                    <p>Inscrivez-vous pour recevoir les
+                    dernières offres</p>
+                </form>
+            </div>
+            <div id="reseauxSociaux">
+                <h4>RESEAUX SOCIAUX</h4>
+                <div id="logoReseauxFooter" >
+                    <a href="https://www.facebook.com/"><img src="../images/iconeFacebook.png" alt="logo reseau social facebook" class="logoSize"></a>
+                    <a href="https://twitter.com/"><img src="../images/iconetwitter.png" alt="logo reseau social twitter" class="logoSize"></a>
+                    <a href="https://www.instagram.com/"><img src="../images/iconeInstagram.png" alt="logo reseau social instagram" class="logoSize"></a>
+                    <a href="https://fr.wikipedia.org/wiki/Google%2B"><img src="../images/iconeGoogle+.png" alt="logo reseau social google+" class="logoSize"></a>
+                    <a href="https://www.youtube.com/"><img src="../images/iconeYoutube.png" alt="logo reseau social youtube" class="logoSize"></a>
+                </div>
+            </div>
+        </section>
+        <div id="copyRight">
+            <p>
+                Copyright &copy; Club Auto - Tous droits réservés
+            </p>
+        </div>
+    </footer>
+    <!--Fin du footer-->
+</body>
+</html>

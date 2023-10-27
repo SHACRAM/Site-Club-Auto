@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+
+:root{
+    --white: #FFFFFF;
+    --yellow: #fab637d6;
+    --pink: #ff4848c5;
+    --orange: #CC6119;
+    --snow: #eceff317;
+    --darkGrey: #232628;
+    --blue: #6C98E1;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--darkGrey);
+}
+a{
+    text-decoration: none;
+    
+}
+/*informations haut du header*/
+span{
+    color: rgb(244, 96, 4);
+}
+
+.logoSize{
+    height: 3em;
+    width: 3em;
+}
+
+.logoSize:hover{
+    background-color: white;
+}
+
+
+#topInfo{
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    gap: 5em;
+     
+}
+#topInfo p, h1{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#topInfo h1{
+    font-family: Monserrat, Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--white);  
+}
+
+.titreSite{
+    display: flex;
+    align-items: center;
+}
+
+.detailTopInfo{
+    font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--white);
+    display: flex;
+    gap: 0.5em;  
+}
+
+#logoMainHeader{
+    display: flex;
+    gap: 0.5em;
+}
+
+#numeroTelephone{
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.logoSizeTelephone{
+    width: 3em;
+    height: 3em;
+}
+
+/* Barre de navigation*/
+
+#menuBurger{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+    padding-right: 2em;
+    align-items: center;
+    
+
+}
+
+#imageBurgerMenu{
+    height: 50px;
+    width: 50px;
+
+
+}
+
+#boutonMenuBurger{
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    padding: 0;
+    
+    
+    
+}
+
+#mainNav ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0;
+    padding-right: 12em;
+    background-color: rgba(255, 255, 255, 0.883);
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+
+#mainNav a{
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: black;
+    
+    
+}
+
+#mainNav li{
+    height: 3em;
+    width: fit-content;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    align-items: center;
+    
+    
+}
+#mainNav li:hover{
+    background-color: rgb(244, 96, 4);
+}
+#mainNav a:hover{
+    color: var(--white);
+}
+
+#mainNav{
+    height: 3em;
+    width: 100%; 
+      
+}
+
+
+/*Fin du header*/
+
+/*Début de la section main*/
+#mainContent{
+    background-color: var(--white);
+    padding: 5em 2em 5em 2em ;
+}
+
+#filAriane a{
+    font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
+    color: grey;
+    font-size: 1.3rem;
+}
+
+#contenuPrincipal{
+    border-top: 2px solid rgba(128, 128, 128, 0.224);
+}
+
+#contenuPrincipal h2{
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    padding-top: 1em;
+}
+
+#contenuPrincipal img{
+    width: 100%;
+}
+
+#detailVoiture{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--darkGrey);
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-top: 5em;
+}
+
+.detailVoitureListe{
+    font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--white);
+    padding: 1em 3em 1em 3em;
+}
+
+.detailVoitureListe:hover{
+    background-color: var(--white);
+    box-shadow: 0 -6px 0 var(--orange);
+    color: black;
+}
+
+#paragrapheUn{
+    font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    line-height: 1.5em;
+}
+
+.paragrapheNormal{
+    font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.6em;
+}
+
+#paragrapheEmphase{
+    font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
+    color: grey;
+    font-size: 1.5rem;
+    line-height: 1.6em;
+    border-left: 7px solid var(--orange);
+    padding: 0.5em 2em 0.5em 2em;
+}
+
+#contenuPrincipal h3{
+    font-family: Montserrat,Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 1em;
+}
+
+#detailOption{
+    font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    list-style: none;
+    padding-left: 1.3em;
+
+}
+
+#detailOption li{
+    padding-bottom: 1em;
+    list-style-image: url(../images/check.png);
+    padding-left: 1em;
+    
+}
+
+
+
+
+
+
+/*Début du footer*/
+
+#mainFooter{
+    display: flex;
+    flex-direction: column;
+    padding: 3em 2em 2em 2em;
+ }
+ 
+ #mainFooter p{
+     color: rgb(154, 152, 152);
+     font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
+     line-height: 1.5em;
+     font-weight: bold;
+     font-size: 1.5rem;
+     margin-bottom: 1.5em;
+ }
+ 
+ #mainFooter h4,label{
+     font-size:1.8rem;
+     font-weight: bold;
+     margin-top: 0;
+ }
+ 
+ #contenuFooter h4, label{
+     color: var(--white);
+     font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ #horaireFooter{
+    margin-bottom: 1em;
+ }
+
+ #paragrapheFooterUn{
+    padding-bottom: 2em;
+ }
+
+ #paragrapheFooterDeux{
+   padding-bottom: 1em;
+   margin-top: 0;
+ }
+
+ #titreReseauxFooter{
+    padding-top: 1.5em;
+ }
+ 
+ 
+ #contenuFooter span{
+     color: var(--blue);
+ }
+ 
+ #contenuFooter p span{
+     color: var(--white);
+ }
+ 
+ #reseauxSociaux{
+     display: flex;
+     flex-direction: column;
+     
+ }
+ 
+ #logoReseauxFooter{
+     display: flex;
+     gap: 0.5em;
+     border-bottom: 2px solid grey;
+     padding-bottom: 2em;
+ 
+ 
+ }
+ .logoForm{
+     height: 4em;
+     width: 4em;
+     border: none;
+     padding: 0;
+ }
+ 
+ .logoForm img{
+     height: 4em;
+     width: 4em;
+ }
+ 
+ #emailNews{
+     font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
+ }
+ 
+ #contenuFooter input{
+     height: 4em;
+     width: 25em;
+     border: none;
+     padding: 0;
+     padding-left: 1em;
+ }
+ 
+ #inputFooter{
+     display: flex;
+     margin-top: 1.5em;
+     
+ }
+ 
+ #copyRight{
+     display: flex;
+     justify-content: center;
+     margin-top: 1.5em;
+ }
+ 
+ #copyRight p{
+     font-size: 1.2rem;
+ }
+
+
+
+
+ /*Début des médias queries*/
+
+@media only screen and (max-width: 896px){
+    /*Médias queries pour la version mobile*/
+    #topInfo{
+        display: none;
+    }
+    #mainNav{
+        display: none;
+    }
+    #titrePresentation{
+        font-size: 3em;
+        padding-left: 1em;
+    }
+    .headerMobile{
+        color: var(--white);
+        font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 3.5rem;
+        padding-left: 0.5em;
+        margin-top: 0;
+    }
+
+
+    #telephoneHeader{
+        display: block;
+        display: flex;
+        font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
+        color: var(--white);
+        font-size: 1.5rem;
+        padding-left: 1em;
+        margin-top: 2em;
+        padding-bottom: 2em;
+       
+    }
+    .logoSize{
+        width: 60px;
+        height: 60px;
+    }
+    
+
+    #telephoneHeader p{
+        margin-top: 0;
+    }
+
+}
+
+@media only screen and ( min-width: 897px){
+    
+    #menuBurger{
+        display: none;
+    }
+    #telephoneHeader{
+        display: none;
+    }
+}
+
+
+
+    /*Début des médias queries du header*/
+
+@media only screen and ( min-width: 1024px) and (max-width: 1600px){
+
+    #topInfo{
+        gap: 2em;
+    }
+    #topInfo p{
+        font-size: 0.9rem;
+    }
+
+    .spanHeader{
+        font-size: 0.8rem;
+    }
+
+}
+
+@media only screen and ( min-width: 1601px){
+    #topInfo{
+        gap: 5em;
+    }
+
+    #topInfo p{
+        font-size: 1rem;
+    }
+    .spanHeader{
+        font-size: 0.8rem;
+    }
+
+
+}
+
+
+
+    /*Début des médias queries pour le main content*/
+@media only screen and ( min-width: 1024px){
+    #mainContent{
+        padding: 0em 5em 2em 8em;
+    }
+
+    #filAriane{
+        margin: 0;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        font-size: 0.5rem;
+    }
+
+    #contenuPrincipal h2{
+        padding-top: 0;
+        margin-bottom: 0.5em;
+        font-size: 2rem;
+
+    }
+    #contenuPrincipal{
+        width: 75%;
+    }
+
+    #paragrapheUn{
+        font-size: 1.3rem;
+    }
+
+    #detailVoiture{
+        display: flex;
+        flex-direction: row;
+        margin-top: 3em;
+    }
+
+    #detailVoiture li{
+        font-size: 1rem;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+    
+    
+   /*Début des médias queries du footer*/
+@media only screen and ( min-width: 1024px){
+    #mainFooter{
+        padding:3em 6em 2em 6em;
+    }
+
+    #premierParagrapheFooter{
+        width: 20em;
+    }
+
+    #contenuFooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2em;
+        border-bottom: 2px solid grey;
+        
+        
+    }
+    #mainFooter h4,label{
+        font-size:1rem;
+        font-weight: bold;
+        margin-top: 0;
+    }
+
+    #contenuFooter p{
+        font-size: 0.7rem;
+    }
+
+    #logoReseauxFooter{
+        border: none;
+    }
+
+    #contenuFooter input{
+        height: 2.5em;
+        width: 18em;
+    }
+    #inputFooter{
+        width: 15em;
+    }
+
+    .logoForm{
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    .logoForm img{
+        display: flex;
+        gap: 2em;
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    #copyRight p{
+        font-size: 0.9rem;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and ( min-width: 1601px){
+
+    #mainFooter{
+        padding:3em 6em 2em 6em;
+    }
+
+    #premierParagrapheFooter{
+        width: 28em;
+    }
+
+    #contenuFooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3em;
+        border-bottom: 2px solid grey;
+        
+        
+    }
+    #mainFooter h4,label{
+        font-size:1.4rem;
+        font-weight: bold;
+        margin-top: 0;
+    }
+
+    #contenuFooter p{
+        font-size: 1rem;
+    }
+
+    
+
+    #contenuFooter input{
+        height: 2.5em;
+        width: 25em;
+    }
+
+    #inputFooter{
+        width: 20em;
+    }
+}
+
+
+
+
+
+    
+
+
