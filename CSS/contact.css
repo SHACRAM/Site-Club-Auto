@@ -361,7 +361,7 @@ span{
 
  /*Début des médias queries*/
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 896px){
     /*Médias queries pour la version mobile*/
     #topInfo{
         display: none;
@@ -406,7 +406,42 @@ span{
 
 }
 
-@media only screen and ( min-width: 768px){
+
+
+/*Début des médias queries du header*/
+
+@media only screen and ( min-width: 1024px) and (max-width: 1600px){
+
+    #topInfo{
+        gap: 2em;
+    }
+    #topInfo p{
+        font-size: 0.9rem;
+    }
+
+    .spanHeader{
+        font-size: 0.8rem;
+    }
+
+}
+
+@media only screen and ( min-width: 1601px){
+    #topInfo{
+        gap: 5em;
+    }
+
+    #topInfo p{
+        font-size: 1rem;
+    }
+    .spanHeader{
+        font-size: 0.8rem;
+    }
+
+}
+
+
+
+@media only screen and ( min-width: 897px){
     
     #menuBurger{
         display: none;
@@ -431,7 +466,7 @@ span{
         position: relative;
         z-index: 2;
         top: 90px;
-        height: 50em;
+        height: 55em;
     }
 
     #formulaireHaut{
@@ -452,36 +487,37 @@ span{
         width: 35em;
         padding-top: 3em;
     }
+}
 
     
     
-    /*Début des médias queries du footer*/
-
+        /*Début des médias queries du footer*/
+@media only screen and ( min-width: 1024px){
     #mainFooter{
-        padding:3em 5em 2em 5em;
+        padding:3em 6em 2em 6em;
     }
 
-    #paragrapheFooterUn{
-        width: 28em;
+    #premierParagrapheFooter{
+        width: 20em;
     }
 
     #contenuFooter{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 4em;
+        gap: 2em;
         border-bottom: 2px solid grey;
-        flex-wrap: wrap;
+        
         
     }
     #mainFooter h4,label{
-        font-size:1.2rem;
+        font-size:1rem;
         font-weight: bold;
         margin-top: 0;
     }
 
     #contenuFooter p{
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     #logoReseauxFooter{
@@ -490,6 +526,9 @@ span{
 
     #contenuFooter input{
         height: 2.5em;
+        width: 18em;
+    }
+    #inputFooter{
         width: 15em;
     }
 
@@ -509,18 +548,61 @@ span{
         font-size: 0.9rem;
         margin-bottom: 0;
     }
-    /*Fin du footer*/
+}
+
+@media only screen and ( min-width: 1601px){
+
+    #mainFooter{
+        padding:3em 6em 2em 6em;
+    }
+
+    #premierParagrapheFooter{
+        width: 28em;
+    }
+
+    #contenuFooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3em;
+        border-bottom: 2px solid grey;
+        
+        
+    }
+    #mainFooter h4,label{
+        font-size:1.4rem;
+        font-weight: bold;
+        margin-top: 0;
+    }
+
+    #contenuFooter p{
+        font-size: 1rem;
+    }
+
+    
+
+    #contenuFooter input{
+        height: 2.5em;
+        width: 25em;
+    }
+
+    #inputFooter{
+        width: 20em;
+    }
+}
 
 
-@media only screen and ( min-width: 1200px){
+
+/*Gestion du contenu principal absolute*/
+@media only screen and ( min-width: 1279px){
 
     #contenuPrincipal{
         top: 8em;
         height: 30em;
-        margin-right: 12em;
-        margin-left: 12em;
-        padding-right: 7em;
-        padding-left: 7em;
+        margin-right: 8em;
+        margin-left: 8em;
+        padding-right: 5em;
+        padding-left: 5em;
     }
 
 
@@ -577,9 +659,6 @@ span{
 }
 
 @media only screen and ( min-width: 1400px){
-    #contenuFooter{
-        flex-wrap: nowrap;
-    }
 
     #formulaireHaut{
         width: 100%;
@@ -589,24 +668,7 @@ span{
         height: 27em;
     }
 
-    
 }
 
 
 
-@media only screen and (max-width: 1200px){
-
-    /*Responsive des informations du header*/
-    #topInfo{
-        width: 100%;
-        gap: 2em;
-    }
-    
-    /*responsive de la barre de navigation*/
-    #mainNav ul{
-        padding:0;
-        justify-content: center;
-    }
-    
-}
-}
