@@ -369,7 +369,7 @@ span{
 
  /*Début des médias queries*/
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 896px){
     /*Médias queries pour la version mobile*/
     #topInfo{
         display: none;
@@ -413,7 +413,7 @@ span{
 
 }
 
-@media only screen and ( min-width: 768px){
+@media only screen and ( min-width: 897px){
     
     #menuBurger{
         display: none;
@@ -421,11 +421,48 @@ span{
     #telephoneHeader{
         display: none;
     }
+}
+
+
+
+    /*Début des médias queries du header*/
+
+@media only screen and ( min-width: 1024px) and (max-width: 1600px){
+
+    #topInfo{
+        gap: 2em;
+    }
+    #topInfo p{
+        font-size: 0.9rem;
+    }
+
+    .spanHeader{
+        font-size: 0.8rem;
+    }
+
+}
+
+@media only screen and ( min-width: 1601px){
+    #topInfo{
+        gap: 5em;
+    }
+
+    #topInfo p{
+        font-size: 1rem;
+    }
+    .spanHeader{
+        font-size: 0.8rem;
+    }
+
+
+}
+
+
 
     /*Début des médias queries pour le main content*/
-
+@media only screen and ( min-width: 1024px){
     #mainContent{
-        padding: 0em 5em 2em 5em;
+        padding: 0em 5em 2em 8em;
     }
 
     #filAriane{
@@ -441,9 +478,12 @@ span{
         font-size: 2rem;
 
     }
+    #contenuPrincipal{
+        width: 75%;
+    }
 
     #paragrapheUn{
-        font-size: 1.8rem;
+        font-size: 1.3rem;
     }
 
     #detailVoiture{
@@ -457,36 +497,37 @@ span{
         padding-left: 2em;
         padding-right: 2em;
     }
+}
 
     
     
-    /*Début des médias queries du footer*/
-
+   /*Début des médias queries du footer*/
+@media only screen and ( min-width: 1024px){
     #mainFooter{
-        padding:3em 5em 2em 5em;
+        padding:3em 6em 2em 6em;
+    }
+
+    #premierParagrapheFooter{
+        width: 20em;
     }
 
     #contenuFooter{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 4em;
+        gap: 2em;
         border-bottom: 2px solid grey;
-        flex-wrap: wrap;
+        
         
     }
     #mainFooter h4,label{
-        font-size:1.2rem;
+        font-size:1rem;
         font-weight: bold;
         margin-top: 0;
     }
 
-    #paragrapheFooterUn{
-        width: 28em;
-    }
-
     #contenuFooter p{
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     #logoReseauxFooter{
@@ -495,6 +536,9 @@ span{
 
     #contenuFooter input{
         height: 2.5em;
+        width: 18em;
+    }
+    #inputFooter{
         width: 15em;
     }
 
@@ -514,51 +558,53 @@ span{
         font-size: 0.9rem;
         margin-bottom: 0;
     }
-    /*Fin du footer*/
-
-
-@media only screen and ( min-width: 1400px){
-    #mainContent{
-        padding: 0em 10em 2em 10em;
-    }
-
-
-    #contenuPrincipalInfo{
-        width: 70%;
-    }
-    #contenuPrincipal img{
-        width: 100%;
-    }
-
-
-    
 }
 
+@media only screen and ( min-width: 1601px){
 
-@media only screen and ( min-width: 1400px){
+    #mainFooter{
+        padding:3em 6em 2em 6em;
+    }
+
+    #premierParagrapheFooter{
+        width: 28em;
+    }
+
     #contenuFooter{
-        flex-wrap: nowrap;
-    }
-
-
-
-}
-
-
-
-@media only screen and (max-width: 1400px){
-
-    /*Responsive des informations du header*/
-    #topInfo{
-        width: 100%;
-        gap: 2em;
-    }
-    
-    /*responsive de la barre de navigation*/
-    #mainNav ul{
-        padding:0;
+        display: flex;
+        flex-direction: row;
         justify-content: center;
+        gap: 3em;
+        border-bottom: 2px solid grey;
+        
+        
     }
+    #mainFooter h4,label{
+        font-size:1.4rem;
+        font-weight: bold;
+        margin-top: 0;
+    }
+
+    #contenuFooter p{
+        font-size: 1rem;
+    }
+
     
+
+    #contenuFooter input{
+        height: 2.5em;
+        width: 25em;
+    }
+
+    #inputFooter{
+        width: 20em;
+    }
 }
-}
+
+
+
+
+
+    
+
+

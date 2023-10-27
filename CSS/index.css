@@ -651,7 +651,7 @@ span{
 
     /*Début des médias queries du header*/
 
-@media only screen and ( min-width: 1280px) and (max-width: 1600px){
+@media only screen and ( min-width: 1024px) and (max-width: 1600px){
 
     #topInfo{
         gap: 2em;
@@ -1040,7 +1040,7 @@ span{
 
 
     /*Début des médias queries du footer*/
-@media only screen and ( min-width: 1280px){
+@media only screen and ( min-width: 1024px){
     #mainFooter{
         padding:3em 6em 2em 6em;
     }
