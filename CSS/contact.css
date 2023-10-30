@@ -57,6 +57,8 @@ span{
 .titreSite{
     display: flex;
     align-items: center;
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
 
 .detailTopInfo{
@@ -70,6 +72,10 @@ span{
 #logoMainHeader{
     display: flex;
     gap: 0.5em;
+}
+
+#telephoneHeader{
+    padding-bottom: 3em;
 }
 
 /* Barre de navigation*/
@@ -161,7 +167,7 @@ span{
 #imageEntete{
     width: 100%;
     position: absolute;
-    top: 13.3em;
+    top: 17em;
 }
 
 #contenuPrincipal{
@@ -171,7 +177,7 @@ span{
     margin: 0em 2em 3em 2em;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
     padding: 3em 3em 1em 3em;
-    height: 70em;
+    height: 73em;
     position: relative;
     top: 9em;
     z-index: 2;
