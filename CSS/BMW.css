@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
 
 :root{
     --white: #FFFFFF;
@@ -57,10 +57,13 @@ span{
 .titreSite{
     display: flex;
     align-items: center;
+    font-family: Monserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
 
 .detailTopInfo{
     font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
     color: var(--white);
     display: flex;
     gap: 0.5em;  
@@ -80,6 +83,12 @@ span{
     width: 3em;
     height: 3em;
 }
+
+.telephoneHeaderSize{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 
 /* Barre de navigation*/
 

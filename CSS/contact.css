@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
 
 :root{
     --white: #FFFFFF;
@@ -63,6 +63,7 @@ span{
 
 .detailTopInfo{
     font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
     color: var(--white);
     display: flex;
     gap: 0.5em;
@@ -76,6 +77,11 @@ span{
 
 #telephoneHeader{
     padding-bottom: 3em;
+}
+
+.telephoneHeaderSize{
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 /* Barre de navigation*/
