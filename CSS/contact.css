@@ -27,8 +27,8 @@ span{
 }
 
 .logoSize{
-    height: 3em;
-    width: 3em;
+    height: 2.8em;
+    width: 2.8em;
 }
 
 .logoSize:hover{
@@ -54,11 +54,9 @@ span{
     color: var(--white);  
 }
 
-.titreSite{
+#titreSite{
     display: flex;
     align-items: center;
-    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
 }
 
 .detailTopInfo{
@@ -66,8 +64,7 @@ span{
     font-weight: bold;
     color: var(--white);
     display: flex;
-    gap: 0.5em;
-    
+    gap: 0.5em;  
 }
 
 #logoMainHeader{
@@ -75,13 +72,14 @@ span{
     gap: 0.5em;
 }
 
-#telephoneHeader{
-    padding-bottom: 3em;
-}
-
 .telephoneHeaderSize{
     font-size: 1rem;
     font-weight: bold;
+}
+#logoSizeTelephone{
+    padding-top: 0.1em;
+    width: 1.8em;
+    height: 1.8em;
 }
 
 /* Barre de navigation*/
@@ -89,28 +87,20 @@ span{
 #menuBurger{
     display: flex;
     justify-content: space-between;
-    padding-top: 2em;
-    padding-right: 2em;
+    padding: 2em 1em 0em 1em;
     align-items: center;
-    
-
 }
 
 #imageBurgerMenu{
-    height: 50px;
-    width: 50px;
-
-
+    height: 40px;
+    width: 40px;
 }
 
 #boutonMenuBurger{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-style: none;
-    padding: 0;
-    
-    
-    
+    padding: 0; 
 }
 
 #mainNav ul{
@@ -182,7 +172,7 @@ span{
     flex-direction: column;
     margin: 0em 2em 3em 2em;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
-    padding: 3em 3em 1em 3em;
+    padding: 3em 2em 1em 2em;
     height: 73em;
     position: relative;
     top: 9em;
@@ -192,7 +182,7 @@ span{
 #contenuPrincipal h2{
     font-family: Montserrat,Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-bottom: 2em;
 }
 
@@ -221,13 +211,14 @@ span{
     display: flex;
     flex-direction: column;
     gap: 1em;
+    font-size: 0.8rem;
 }
 
 #textAreaFormulaire{
     display: flex;
     flex-direction: column;
     gap: 1em;
-    padding-top: 5em;
+    padding-top: 4em;
 }
 
 #textAreaFormulaire label{
@@ -265,7 +256,7 @@ span{
 #mainFooter{
     display: flex;
     flex-direction: column;
-    padding: 3em 2em 2em 2em;
+    padding: 3em 1.5em 2em 1.5em;
  }
  
  #mainFooter p{
@@ -388,8 +379,8 @@ span{
     .headerMobile{
         color: var(--white);
         font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
         font-size: 3rem;
-        padding-left: 0.5em;
         margin-top: 0;
     }
 
@@ -400,22 +391,13 @@ span{
         font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
         color: var(--white);
         font-size: 1.5rem;
-        padding-left: 1em;
+        padding-left: 0.5em;
         margin-top: 2em;
-
-        
-       
-    }
-    .logoSize{
-        width: 60px;
-        height: 60px;
     }
     
-
     #telephoneHeader p{
         margin-top: 0;
     }
-
 }
 
 
@@ -451,7 +433,7 @@ span{
 
 }
 
-
+/*Média queries du main content*/
 
 @media only screen and ( min-width: 897px){
     

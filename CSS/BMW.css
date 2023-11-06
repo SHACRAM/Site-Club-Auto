@@ -27,8 +27,8 @@ span{
 }
 
 .logoSize{
-    height: 3em;
-    width: 3em;
+    height: 2.8em;
+    width: 2.8em;
 }
 
 .logoSize:hover{
@@ -54,11 +54,10 @@ span{
     color: var(--white);  
 }
 
-.titreSite{
+#titreSite{
     display: flex;
     align-items: center;
-    font-family: Monserrat, Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+    
 }
 
 .detailTopInfo{
@@ -74,20 +73,12 @@ span{
     gap: 0.5em;
 }
 
-#numeroTelephone{
-    color: var(--white);
-    font-size: 2rem;
-}
-
-.logoSizeTelephone{
-    width: 3em;
-    height: 3em;
-}
-
 .telephoneHeaderSize{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
 }
+
+
 
 
 /* Barre de navigation*/
@@ -95,23 +86,18 @@ span{
 #menuBurger{
     display: flex;
     justify-content: space-between;
-    padding-top: 2em;
-    padding-right: 2em;
+    padding: 3em 1.5em 0em 1em;
     align-items: center;
-    
-
 }
 
 #imageBurgerMenu{
-    height: 50px;
-    width: 50px;
-
-
+    height: 40px;
+    width: 40px;
 }
 
 #boutonMenuBurger{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-style: none;
     padding: 0;
     
@@ -167,13 +153,13 @@ span{
 /*Début de la section main*/
 #mainContent{
     background-color: var(--white);
-    padding: 5em 2em 5em 2em ;
+    padding: 5em 1.5em 5em 1.5em ;
 }
 
 #filAriane a{
     font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
     color: grey;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 #contenuPrincipal{
@@ -183,7 +169,7 @@ span{
 #contenuPrincipal h2{
     font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
     padding-top: 1em;
 }
 
@@ -200,12 +186,12 @@ span{
     background-color: var(--darkGrey);
     padding-left: 0.5em;
     padding-right: 0.5em;
-    margin-top: 5em;
+    margin-top: 3em;
 }
 
 .detailVoitureListe{
     font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     color: var(--white);
     padding: 1em 3em 1em 3em;
@@ -219,20 +205,20 @@ span{
 
 #paragrapheUn{
     font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2rem;
-    line-height: 1.5em;
+    font-size: 1.5rem;
+    line-height: 1.3em;
 }
 
 .paragrapheNormal{
     font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.6em;
 }
 
 #paragrapheEmphase{
     font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
     color: grey;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.6em;
     border-left: 7px solid var(--orange);
     padding: 0.5em 2em 0.5em 2em;
@@ -240,14 +226,14 @@ span{
 
 #contenuPrincipal h3{
     font-family: Montserrat,Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2rem;
+    font-size:1.8rem;
     font-weight: bold;
     padding-top: 1em;
 }
 
 #detailOption{
     font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     list-style: none;
     padding-left: 1.3em;
 
@@ -256,13 +242,9 @@ span{
 #detailOption li{
     padding-bottom: 1em;
     list-style-image: url(../images/check.png);
-    padding-left: 1em;
+    padding-left: 0.5em;
     
 }
-
-
-
-
 
 
 /*Début du footer*/
@@ -270,7 +252,7 @@ span{
 #mainFooter{
     display: flex;
     flex-direction: column;
-    padding: 3em 2em 2em 2em;
+    padding: 3em 1.5em 2em 1.5em;
  }
  
  #mainFooter p{
@@ -330,9 +312,9 @@ span{
      gap: 0.5em;
      border-bottom: 2px solid grey;
      padding-bottom: 2em;
- 
- 
  }
+
+
  .logoForm{
      height: 4em;
      width: 4em;
@@ -393,11 +375,10 @@ span{
     .headerMobile{
         color: var(--white);
         font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 3.5rem;
-        padding-left: 0.5em;
+        font-weight: bold;
+        font-size: 3rem;
         margin-top: 0;
     }
-
 
     #telephoneHeader{
         display: block;
@@ -405,21 +386,13 @@ span{
         font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
         color: var(--white);
         font-size: 1.5rem;
-        padding-left: 1em;
+        padding-left: 0.5em;
         margin-top: 2em;
-        padding-bottom: 2em;
-       
-    }
-    .logoSize{
-        width: 60px;
-        height: 60px;
     }
     
-
     #telephoneHeader p{
         margin-top: 0;
     }
-
 }
 
 @media only screen and ( min-width: 897px){
@@ -431,7 +404,6 @@ span{
         display: none;
     }
 }
-
 
 
     /*Début des médias queries du header*/
@@ -463,9 +435,7 @@ span{
         font-size: 0.8rem;
     }
 
-
 }
-
 
 
     /*Début des médias queries pour le main content*/
