@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CLUB AUTO - Page d'accueil </title>
+    <meta name="description" content="Bienvenue sur CLUB AUTO, venez découvir l'ensemble de  nos véhicules à vendre et à louer. Une équipe réactive et à l'écoute de vos besoins! ">
+    <title>CLUB AUTO - Accueil </title>
+    <link rel="alternate" hreflang="fr-FR" href="#">
     <link rel="stylesheet" href="../CSS/normalize.css">
     <link rel="stylesheet" href="../CSS/index.css">
 </head>
@@ -17,18 +19,18 @@
         </div>
         <div id="topInfo">
             <div id="titreSite">
-                <a href="../HTML/index.html"><h1>CLUB AUTO</h1></a>
+                <a href="../HTML/index.html"><h1 class="upperCase">Club auto</h1></a>
             </div>
             <div class="detailTopInfo">
                 <img src="../images/icone-adresse.png" alt="icone représentant une localisation sur une carte" class="logoSize">
-                <p><span class="spanHeader">ADRESSE:</span><br> AVENUE CHARLES DE GAULLE<br>75000 PARIS</p>
+                <p class="upperCase"><span class="spanHeader">Adresse :</span><br> Avenue charles de gaulle<br>75000 Paris</p>
             </div>
             <div class="detailTopInfo">
                 <img src="../images/icon-telephone.png" alt="icone représentant un téléphone" class="logoSize">
-                <p><span class="spanHeader">T&Eacute;L&Eacute;PHONE:</span><br>01 23 45 67 89</p>
+                <p><span class="spanHeader">T&Eacute;l&Eacute;phone :</span><br>01 23 45 67 89</p>
             </div>
             <div class="detailTopInfo">
-                <p><span class="spanHeader">OUVERTURE:</span> Du lundi au samedi<br><span class="spanHeader">HORAIRES:</span> De 9h à 17h</p>
+                <p><span class="spanHeader">Ouverture :</span> Du lundi au samedi<br><span class="spanHeader">Horaires :</span> De 9h à 17h</p>
             </div>
             <div id="logoMainHeader">
                 <a href="https://www.facebook.com/"><img src="../images/iconeFacebook.png" alt="logo de Facebook" class="logoSize"></a>
@@ -37,16 +39,16 @@
         </div>
         <div class="detailTopInfo" id="telephone">
             <img src="../images/icon-telephone.png" alt="icone représentant un téléphone" id="logoSizeTelephone">
-            <p><span class="telephoneHeaderSize">T&Eacute;L&Eacute;PHONE&nbsp;:</span><br>01 23 45 67 89</p>
+            <p class="upperCase"><span class="telephoneHeaderSize">T&Eacute;l&Eacute;phone&nbsp;:</span><br><a href="tel:+0123456789" id="lienNumeroTelephone">01 23 45 67 89</a></p>
         </div>
         
         <!--Barre de Navigation-->
         <nav id="mainNav">
             <ul>
-                <li><a href="index.html">ACCUEIL</a></li>
-                <li><a href="#">VENTE</a></li>
-                <li><a href="#">LOCATION</a></li> 
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#">Vente</a></li>
+                <li><a href="#">Location</a></li> 
+                <li><a href="contact.html">Contact</a></li>
             </ul>
 
         </nav>
@@ -54,12 +56,12 @@
    <!--Fin du Header-->
 
    <!--Début de la première section-->
-   <h1 id="titrePresentation">CLUB AUTO<span> LE MEILLEUR DE L'AUTOMOBILE</span></h1>
+   <h1 id="titrePresentation" class="upperCase">Club auto<span> Le meilleur de l'automobile</span></h1>
     <section id="mainPresentation">
         <article id="premierArticle">
-                <img src="../images/clients.jpg" alt="Deux clients heureux devant une voiture" id="imagePremierArticle">
+                <img src="../images/clients.jpg" alt="Deux clients heureux devant une voiture" id="imagePremierArticle" loading="lazy">
             <div id="textPremierArticle">
-                <h2 id="articleTitreUn">BIENVENUE CHEZ<span> CLUB AUTO</span></h2>
+                <h2 id="articleTitreUn" class="upperCase">Bienvenue chez<span> club auto</span></h2>
                 <p id="sousTitreArticleUn"><strong> ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis unde dolore vero sunt. Quidem dolore id dol</strong>
                 </p>
                 <p id="contenuParagrapheUn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aliquid amet, libero repellendus, doloribus fugit autem sit provident quis, voluptatum dicta aperiam consequuntur aspernatur nam itaque quisquam neque corporis distinctio. Rem eos fugit praesentium ab recusandae cumque maxime doloribus, sapiente dolorem sequi odio beatae eum. Ab, dolorum quas! Commodi veniam quisquam laborum.
@@ -68,7 +70,7 @@
         </article>
         <article id="deuxiemeArticle">
             <div>
-                <h2 id="articleTitreDeux">LE MEILLEUR DE L'AUTOMOBILE</h2>
+                <h2 id="articleTitreDeux" class="upperCase">Le meilleur de l'automobile</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis atque maxime, consequatur labore illum reprehenderit quas consequuntur dolor, eveniet placeat enim qui aut? Itaque aspernatur error quibusdam aliquam? Fugiat inventore quos </p>
 
                 <ul>
@@ -79,7 +81,7 @@
                     <li>Lorem ipsum dolor sit amet</li>
                 </ul>
             </div>
-            <img src="../images/entretien.jpg" alt="image montrant un technicien en train de nettoyer une voiture" id="imageDeuxiemeArticle">
+            <img src="../images/entretien.jpg" alt="image montrant un technicien en train de nettoyer une voiture" id="imageDeuxiemeArticle" loading="lazy">
         </article>
     </section>
     <!--Fin de la première section-->
@@ -104,40 +106,40 @@
     <!--Début de la troisième section-->
     <section id="mainVehiculesRecents">
         <div id="titreSectionTrois">
-            <h2 id="detailTitre">VEHICULES RECENTS</h2>
+            <h2 id="detailTitre" class="upperCase">Véhicules recents</h2>
         </div>
         <div id="listeVehiculesRecents">   
             <a href="/HTML/bmw535Inavi.html"><div class="detailVehicule" id="vehiculeUn">
                 <div>
-                    <img src="../images/vehicule2.jpg" alt="image montrant une BMW 535l" class="imageVehiculeRecent">
+                    <img src="../images/vehicule2.jpg" alt="image montrant une BMW 535l" class="imageVehiculeRecent" loading="lazy">
                 </div>
                 <div class="infoVehicule">
                     <div class="bordureBasse">
                         <p class="prix">5&nbsp;500€</p>
-                        <p>BMW 535l, NAVI, LEATHER, ABS</p>
+                        <p class="upperCase">bmw 535l, navi, leather, abs</p>
                         
                     </div>
                 </div>
             </div></a>
             <div class="detailVehicule" id="vehiculeDeux">
                 <div>
-                    <img src="../images/vehicule2.jpg" alt="image montrant une BMW 328l" class="imageVehiculeRecent">
+                    <img src="../images/vehicule2.jpg" alt="image montrant une BMW 328l" class="imageVehiculeRecent" loading="lazy">
                 </div>
                 <div class="infoVehicule">
                     <div class="bordureBasse">
                         <p class="prix">8&nbsp;000€</p>
-                        <p>BMW 328l, SPORT,LINE BODY KIT</p>
+                        <p class="upperCase">bmw 328l, sport, line body kit</p>
                     </div>
                 </div>
             </div>
             <div class="detailVehicule" id="vehiculeTrois">
                 <div>
-                    <img src="../images/vehicule2.jpg" alt="image montrant une Ford Explorer de 2015" class="imageVehiculeRecent">
+                    <img src="../images/vehicule2.jpg" alt="image montrant une Ford Explorer de 2015" class="imageVehiculeRecent" loading="lazy">
                 </div>
                 <div class="infoVehicule">
                     <div class="bordureBasse">
                         <p class="prixTrois"><span id="ancienPrix">9&nbsp;000€</span>8&nbsp;200€</p>
-                        <p>FORD EXPLORER 2015 4WD</p>                       
+                        <p class="upperCase">ford explorer 2015 4wd</p>                       
                     </div>
                 </div>
             </div>
@@ -180,7 +182,7 @@
             </section>
         </div>
         <div class="boutonContact">
-            <a href="../HTML/contact.html" >CONTACTEZ NOUS</a>
+            <a href="../HTML/contact.html" class="upperCase">Contactez nous</a>
         </div>
     </section>
     <!--Fin de la quatrième section-->
@@ -190,7 +192,7 @@
     <section id="mainDernierePresentation">
         <article id="articleDernierePresentation">
             <div>
-                <h3>CLUB AUTO<br><span> VENTE ET LOCATION</span></h3>
+                <h3 class="upperCase">Club auto<br><span> Vente et location</span></h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolores hic deserunt fugiat dolorum ab a eligendi doloremque quasi ipsam quaerat sunt nam ipsum quos tempore ex provident, soluta sed.</p>
             </div>
         </article>
@@ -202,14 +204,14 @@
         <section id="contenuFooter">
             <div>
                 
-                    <h4><span>CLUB</span> AUTO</h4>
+                    <h4 class="upperCase"><span>Club</span> auto</h4>
                 <p id="premierParagrapheFooter">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, exercitationem facere! 
                 </p>
             </div>
             <div>
                 
-                    <h4>HORAIRE D'OUVERTURE</h4>
+                    <h4 class="upperCase">Horaire d'ouverture</h4>
                 <p>    
                     lundi-samedi: <span>09:00 - 17:00</span><br>
                     Dimanche et jours fériés: <span>Fermé</span>
@@ -218,7 +220,7 @@
             <div>
                 <form>
                     <div>
-                        <label for="emailNews" >NEWSLETTER</label>
+                        <label for="emailNews" class="upperCase" >Newsletter</label>
                     </div>
                     <div id="inputFooter">
                         <input type="email" name="emailNews" id="emailNews" placeholder="Entrez votre email">
@@ -229,7 +231,7 @@
                 </form>
             </div>
             <div id="reseauxSociaux">
-                <h4>RESEAUX SOCIAUX</h4>
+                <h4 class="upperCase">Reseaux sociaux</h4>
                 <div id="logoReseauxFooter" >
                     <a href="https://www.facebook.com/"><img src="../images/iconeFacebook.png" alt="logo reseau social facebook" class="logoSize"></a>
                     <a href="https://twitter.com/"><img src="../images/iconetwitter.png" alt="logo reseau social twitter" class="logoSize"></a>

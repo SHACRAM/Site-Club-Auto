@@ -25,6 +25,10 @@ span{
     color: rgb(244, 96, 4);
 }
 
+.upperCase{
+    text-transform: uppercase;
+}
+
 .logoSize{
     height: 2.8em;
     width: 2.8em;
@@ -80,6 +84,9 @@ span{
     width: 1.8em;
     height: 1.8em;
 }
+#lienNumeroTelephone{
+    color: white;
+}
 
 
 /* Barre de navigation*/
@@ -129,6 +136,7 @@ span{
     padding-right: 1em;
     display: flex;
     align-items: center;
+    text-transform: uppercase;
     
 }
 #mainNav li:hover{
@@ -278,9 +286,7 @@ span{
     flex-direction: column;
 }
 
-#choixLocation h3{
-    font-size: 3rem;
-}
+
 
 #choixAchat{
     background-color:var(--pink); 
@@ -673,6 +679,7 @@ span{
 
     .spanHeader{
         font-size: 0.8rem;
+        text-transform: uppercase;
     }
 
 }
@@ -687,6 +694,7 @@ span{
     }
     .spanHeader{
         font-size: 0.8rem;
+        text-transform: uppercase;
     }
 
 

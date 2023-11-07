@@ -19,7 +19,9 @@ body{
 }
 a{
     text-decoration: none;
-    
+}
+.upperCase{
+    text-transform: uppercase;
 }
 /*informations haut du header*/
 span{
@@ -75,11 +77,15 @@ span{
 .telephoneHeaderSize{
     font-size: 1rem;
     font-weight: bold;
+    text-transform: uppercase;
 }
 #logoSizeTelephone{
     padding-top: 0.1em;
     width: 1.8em;
     height: 1.8em;
+}
+#lienNumeroTelephone{
+    color: white;
 }
 
 /* Barre de navigation*/
@@ -127,6 +133,7 @@ span{
     padding-right: 1em;
     display: flex;
     align-items: center;
+    text-transform: uppercase;
     
 }
 #mainNav li:hover{
@@ -272,6 +279,7 @@ span{
      font-size:1.8rem;
      font-weight: bold;
      margin-top: 0;
+     text-transform: uppercase;
  }
  
  #contenuFooter h4, label{
@@ -382,6 +390,7 @@ span{
         font-weight: bold;
         font-size: 3rem;
         margin-top: 0;
+        text-transform: uppercase;
     }
 
 
@@ -415,6 +424,7 @@ span{
 
     .spanHeader{
         font-size: 0.8rem;
+        text-transform: uppercase;
     }
 
 }
@@ -429,6 +439,7 @@ span{
     }
     .spanHeader{
         font-size: 0.8rem;
+        text-transform: uppercase;
     }
 
 }
