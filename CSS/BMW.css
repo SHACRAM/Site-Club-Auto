@@ -196,9 +196,6 @@ span{
     padding-right: 0.5em;
     margin-top: 3em;
 }
-#detailVoiture a{
-    color: var(--white);
-}
 
 .detailVoitureListe{
     font-family: Open Sans,Verdana, Geneva, Tahoma, sans-serif;
